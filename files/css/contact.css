@@ -875,4 +875,8 @@ main .images .forrest .box3 {
 main .images .forrest .box3 ul {
   text-align: left;
 }
+
+main .images .forrest .box3 .smaller {
+  font-size: 24px;
+}
 /*# sourceMappingURL=contact.css.map */

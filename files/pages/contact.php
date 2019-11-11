@@ -56,8 +56,8 @@ and open the template in the editor.
                 </div>
                 <div class="box box3">
                     Put the Magic of the&nbsp;web to&nbsp;work
-                    <div class="spacer20"></div>
-                    Contact Us.
+                    <div class="spacer10"></div>
+                    <div class="smaller">Contact Us</div>
                 </div>
             </div>
         </div>
