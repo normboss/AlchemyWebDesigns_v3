@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 6, 2018, 5:33:40 PM
+    Author     : Norm
+*/
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[11];
+  -ms-grid-columns: (1fr)[11];
+      grid-template: repeat(11, 1fr)/repeat(11, 1fr);
+}
+
+main .box {
+  width: 100%;
+  /*border: 3px solid red;*/
+}
+
+main .box img {
+  width: 100%;
+  height: 100%;
+}
+
+main .c1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 10;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-area: 1 / 1 / 11 / 11;
+  z-index: 1;
+}
+
+main .c2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-area: 2 / 2 / 10 / 10;
+  z-index: 2;
+}
+
+main .c3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 6;
+  grid-area: 3 / 3 / 9 / 9;
+  z-index: 3;
+}
+
+main .c4 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-area: 4 / 4 / 8 / 8;
+  z-index: 4;
+}
+
+main .c5 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 5 / 5 / 7 / 7;
+  z-index: 5;
+}
+/*# sourceMappingURL=overlap.css.map */

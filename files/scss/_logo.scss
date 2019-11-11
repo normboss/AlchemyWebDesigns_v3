@@ -1,0 +1,84 @@
+
+.logo {
+    &__title {
+        font-family: "Major Mono Display", monospace;
+        color: #93999a;
+        @include min-mixin(1300px) {
+            color: darkgray;
+        }
+        font-weight: 800;
+        font-size: 64px;
+        word-spacing: 10px;
+        @include max-mixin(400px) {
+            font-size: 48px;
+        }
+    }
+    &__sub-title {
+        color: #93999a;
+        font-weight: 450;
+        @include min-mixin(1300px) {
+            color: darkgray;
+            font-weight: 800;
+        }
+        font-family: $font-nothing;
+        font-size: 36px;
+        letter-spacing: 6px;
+        @include max-mixin(400px) {
+            font-size: 28px;
+        }
+    }
+}
+
+.small-logo {
+    background-color: #9DA5B2;
+    color: white;
+    &__title {
+        font-family: "Major Mono Display", monospace;
+        font-weight: 800;
+        font-size: 32px;
+        word-spacing: 10px;
+        @include max-mixin(325px) {
+            font-size: 20px;
+        }
+    }
+
+    &__sub-title {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        @include max-mixin(400px) {
+            // font-size: 28px;
+        }
+    }
+}
+
+.header-logo {
+    // border: 3px solid red;
+    background-color: $menu-background-color;
+    color: black;
+    height: 50px;
+    padding-left: 50px;
+    @include max-mixin(750px) {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    &__title {
+        font-family: "Major Mono Display", monospace;
+        font-weight: 800;
+        font-size: 32px;
+        word-spacing: 10px;
+        @include max-mixin(750px) {
+            font-size: 20px;
+            text-align: left;
+        }
+    }
+
+    &__sub-title {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        @include max-mixin(750px) {
+            font-size: 16px;
+        }
+    }
+}
