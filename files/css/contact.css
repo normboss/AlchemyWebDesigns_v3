@@ -233,6 +233,12 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .header-logo__title {
+    font-size: 16px;
+  }
+}
+
 .header-logo__sub-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
@@ -242,6 +248,12 @@ font-family: 'Open Sans', sans-serif;
 @media screen and (max-width: 750px) {
   .header-logo__sub-title {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .header-logo__sub-title {
+    font-size: 14px;
   }
 }
 
@@ -358,6 +370,12 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .header-logo__title {
+    font-size: 16px;
+  }
+}
+
 .header-logo__sub-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
@@ -367,6 +385,12 @@ font-family: 'Open Sans', sans-serif;
 @media screen and (max-width: 750px) {
   .header-logo__sub-title {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .header-logo__sub-title {
+    font-size: 14px;
   }
 }
 
@@ -382,12 +406,12 @@ and open the template in the editor.
 .foot {
   background-color: #9da5b2;
   width: 100%;
-  height: 90px;
+  height: 80px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: white;
@@ -405,6 +429,7 @@ and open the template in the editor.
         -ms-flex-align: center;
             align-items: center;
     height: 180px;
+    padding-bottom: 50px;
   }
 }
 
@@ -516,6 +541,7 @@ and open the template in the editor.
 }
 
 .header .nav .nav__narrow {
+  background-color: #D4CD96;
   height: 50px;
   grid-area: menu-narrow;
   display: none;
@@ -603,6 +629,7 @@ and open the template in the editor.
 
 .header .nav .nav__narrow {
   z-index: 10;
+  padding-top: 5px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -623,7 +650,7 @@ and open the template in the editor.
 .header .nav .nav__narrow ul .hamburger {
   display: block;
   width: 35px;
-  height: 5px;
+  height: 4px;
   background-color: black;
   margin: 6px 0;
 }
@@ -654,6 +681,7 @@ and open the template in the editor.
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 10;
+  font-size: 16px;
 }
 
 .header .nav .nav__narrow ul .dropdown-content a {
@@ -664,6 +692,7 @@ and open the template in the editor.
   display: block;
   text-align: left;
   z-index: 10;
+  font-size: 16px;
 }
 
 .header .nav .nav__narrow ul .dropdown-content a:hover {

@@ -71,6 +71,10 @@
             font-size: 20px;
             text-align: left;
         }
+        @include max-mixin(320px) {
+            font-size: 16px;
+            // text-align: left;
+        }
     }
 
     &__sub-title {
@@ -79,6 +83,9 @@
         font-size: 20px;
         @include max-mixin(750px) {
             font-size: 16px;
+        }
+        @include max-mixin(300px) {
+            font-size: 14px;
         }
     }
 }

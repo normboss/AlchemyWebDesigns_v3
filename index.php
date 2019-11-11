@@ -12,6 +12,7 @@ and open the template in the editor.
 -->
 <html>
 
+
 <head>
     <title>Alchemy Web Design</title>
     <meta charset="UTF-8">
@@ -30,7 +31,6 @@ and open the template in the editor.
 <body>
 
     <?php
-    //  require './files/includes/menu2.php'; 
         require './files/includes/header1.php';
     ?>
     <main>
