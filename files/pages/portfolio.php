@@ -42,7 +42,7 @@ and open the template in the editor.
                 <div class="box11">Our Work</div>
                 <div class="box12">
                     <a href="https://www.scottishwroughtiron.com" target="_blank">
-                        <img src="../images/AndySparks.png">
+                        <img src="../images/AndySparks.png" alt="Blacksmith Andy Leck working with sparks flying.">
                     </a>
                 </div>
                 <div class="box13">
@@ -52,7 +52,7 @@ and open the template in the editor.
                 </div>
                 <div class="box14">
                     <a href="https://www.mainevillageweaver.com" target="_blank">
-                        <img src="../images/PhyllisWorking.png">
+                        <img src="../images/PhyllisWorking.png" alt="Weaver Phyllis Leck working at her loom.">
                     </a>
                 </div>
                 <div class="box15">
@@ -62,7 +62,7 @@ and open the template in the editor.
                 </div>
                 <div class="box16">
                     <a href="http://www.elementalshift.com" target="_blank">
-                        <img src="../images/Kirsten.png">
+                        <img src="../images/Kirsten.png" alt="Kirsten Jettinghoff mental health counselor.">
                     </a>
                 </div>
                 <div class="box17">
