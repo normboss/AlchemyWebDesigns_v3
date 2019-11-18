@@ -34,6 +34,9 @@ and open the template in the editor.
     <?php
     // require '../includes/menu2.php';
     require '../includes/header1.php';
+    $altStyle = 'style="text-align: center; display: block; font-size: 24px; 
+                font-style: italic; font-family: Arial; font-weight: normal; text-decoration: none; color: black;"';
+    // $altStyle = '""';
     ?>
     <main>
 
@@ -42,7 +45,11 @@ and open the template in the editor.
                 <div class="box11">Our Work</div>
                 <div class="box12">
                     <a href="https://www.scottishwroughtiron.com" target="_blank">
-                        <img src="../images/AndySparks.png" alt="Blacksmith Andy Leck working with sparks flying.">
+                        <img src="../images/AndySparks.png" 
+                        alt="Blacksmith Andy Leck working with sparks flying." <?php echo $altStyle ?>
+                        title="Blacksmith Andy Leck working with sparks flying."
+                        >
+
                     </a>
                 </div>
                 <div class="box13">
@@ -52,7 +59,8 @@ and open the template in the editor.
                 </div>
                 <div class="box14">
                     <a href="https://www.mainevillageweaver.com" target="_blank">
-                        <img src="../images/PhyllisWorking.png" alt="Weaver Phyllis Leck working at her loom.">
+                        <img src="../images/PhyllisWorking.png" 
+                        alt="Weaver Phyllis Leck working at her loom." <?php echo $altStyle ?>>
                     </a>
                 </div>
                 <div class="box15">
@@ -62,7 +70,8 @@ and open the template in the editor.
                 </div>
                 <div class="box16">
                     <a href="http://www.elementalshift.com" target="_blank">
-                        <img src="../images/Kirsten.png" alt="Kirsten Jettinghoff mental health counselor.">
+                        <img src="../images/Kirsten.png" 
+                        alt="Kirsten Jettinghoff mental health counselor." <?php echo $altStyle ?>>
                     </a>
                 </div>
                 <div class="box17">

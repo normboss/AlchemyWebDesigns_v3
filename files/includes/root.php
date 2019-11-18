@@ -7,6 +7,7 @@ $_SESSION['root'] = "/AlchemyWebDesigns_v3/public_html";
 // echo "<br>";
 // echo $_SESSION['root'];
 
-// $_SESSION['root'] = "";
+//$_SESSION['root'] = "";
+//$_SESSION['root'] = "/test/alchemywebdesigns/public_html";
 ?>
 

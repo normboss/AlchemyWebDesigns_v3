@@ -807,6 +807,7 @@ main .portfolio .box1 {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -826,11 +827,18 @@ main .portfolio .box1 .box11 {
   padding-bottom: 6px;
 }
 
+main .portfolio .box1 .box12,
+main .portfolio .box1 .box14,
+main .portfolio .box1 .box16 {
+  text-decoration: none;
+}
+
 main .portfolio .box1 .box12 img,
 main .portfolio .box1 .box14 img,
 main .portfolio .box1 .box16 img {
   width: 280px;
   height: auto;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {
