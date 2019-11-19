@@ -755,6 +755,10 @@ main .small-text {
   font-weight: bold;
 }
 
+main .images {
+  background-color: lightgrey;
+}
+
 main .images .forrest {
   background-image: url("../images/fog_sherman_lake.png");
   width: 100%;
