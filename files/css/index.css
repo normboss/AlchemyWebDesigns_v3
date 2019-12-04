@@ -21,6 +21,7 @@ and open the template in the editor.
 @import url("https://use.typekit.net/cav8sep.css");
 @import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps");
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oregano&display=swap");
 .html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -113,7 +114,7 @@ and open the template in the editor.
 font-family: 'Major Mono Display', monospace;
 font-family: 'Open Sans', sans-serif;
 */
-.header .elemental-shift {
+.header .elemental-shift, .header-index .elemental-shift {
   font-family: Zapfino, arial;
   font-size: 120px;
   /*    @include max-mixin(650px) {
@@ -124,7 +125,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width: 1000px) {
-  .header .elemental-shift {
+  .header .elemental-shift, .header-index .elemental-shift {
     font-size: 80px;
     /*color: red;*/
     /*padding-top: 25px;*/
@@ -132,7 +133,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width: 700px) {
-  .header .elemental-shift {
+  .header .elemental-shift, .header-index .elemental-shift {
     /*font-size: 64px;*/
     /*color: green;*/
     padding-top: 0px;
@@ -209,7 +210,10 @@ font-family: 'Open Sans', sans-serif;
   background-color: #F6F8F9;
   color: black;
   height: 50px;
-  padding-left: 50px;
+  padding-left: 25px;
+  position: relative;
+  left: -8px;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 750px) {
@@ -233,7 +237,7 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .header-logo__title {
     font-size: 16px;
   }
@@ -251,30 +255,10 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   .header-logo__sub-title {
     font-size: 14px;
   }
-}
-
-.foot {
-  background-color: #F6F8F9;
-  width: 100%;
-  height: 80px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding-top: 50px;
-}
-
-.foot__text {
-  font-size: 20px;
-  padding-top: 15px;
 }
 
 .logo__title {
@@ -346,7 +330,10 @@ font-family: 'Open Sans', sans-serif;
   background-color: #F6F8F9;
   color: black;
   height: 50px;
-  padding-left: 50px;
+  padding-left: 25px;
+  position: relative;
+  left: -8px;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 750px) {
@@ -370,7 +357,7 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .header-logo__title {
     font-size: 16px;
   }
@@ -388,7 +375,7 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   .header-logo__sub-title {
     font-size: 14px;
   }
@@ -404,17 +391,28 @@ and open the template in the editor.
     Author     : Norm
 */
 .foot {
-  background-color: #9da5b2;
-  width: 100%;
+  position: relative;
+  margin-left: 25px;
+  width: 110vw;
+  left: -8px;
+  top: -8px;
   height: 80px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 50px;
   padding-bottom: 80px;
+  padding-right: 200px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: white;
+}
+
+@media screen and (max-width: 1050px) {
+  .foot {
+    padding-right: 100px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -424,20 +422,31 @@ and open the template in the editor.
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
-    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     height: 180px;
     padding-bottom: 50px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .foot {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
 .foot .small-logo {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+  .foot .small-logo {
+    margin: 0;
+  }
 }
 
 .foot .foot__text {
@@ -466,10 +475,10 @@ and open the template in the editor.
     Author     : Norm
 */
 .header {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: -1px;
-  padding-right: 15px;
+  background-color: #F6F8F9;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "banner menu-wide";
@@ -524,7 +533,7 @@ and open the template in the editor.
 }
 
 .header .nav .nav__wide {
-  /*border: 3px solid red;*/
+  position: relative;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: menu-wide;
@@ -538,10 +547,13 @@ and open the template in the editor.
 
 .header .nav .nav__wide a {
   text-decoration: none;
+  color: inherit;
 }
 
 .header .nav .nav__narrow {
   background-color: #F6F8F9;
+  position: relative;
+  right: -5px;
   height: 50px;
   grid-area: menu-narrow;
   display: none;
@@ -555,11 +567,287 @@ and open the template in the editor.
   }
 }
 
-.header .nav .nav__wide {
+.header .nav .nav__wide, .header .header-index .nav-index .nav-index__wide, .header-index .nav-index .header .nav-index__wide {
   z-index: 10;
 }
 
-.header .nav .nav__wide ul {
+.header .nav .nav__wide ul, .header .header-index .nav-index .nav-index__wide ul, .header-index .nav-index .header .nav-index__wide ul {
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  list-style-type: none;
+  padding: 0;
+  padding-top: 17px;
+  margin: 0;
+  padding-left: 25px;
+  overflow: hidden;
+  font-family: Arial;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  background-color: #F6F8F9;
+  height: 50px;
+  /*.dropdown-content a:hover {background-color: #f1f1f1}*/
+}
+
+.header .nav .nav__wide ul li a, .header .header-index .nav-index .nav-index__wide ul li a, .header-index .nav-index .header .nav-index__wide ul li a, .header .nav .nav__wide ul .dropbtn, .header .header-index .nav-index .nav-index__wide ul .dropbtn, .header-index .nav-index .header .nav-index__wide ul .dropbtn {
+  display: inline-block;
+  color: #0A0A09;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header .nav .nav__wide ul li a:hover, .header .header-index .nav-index .nav-index__wide ul li a:hover, .header-index .nav-index .header .nav-index__wide ul li a:hover, .header .nav .nav__wide ul .dropdown:hover .dropbtn, .header .header-index .nav-index .nav-index__wide ul .dropdown:hover .dropbtn, .header-index .nav-index .header .nav-index__wide ul .dropdown:hover .dropbtn {
+  /*background-color: red;*/
+  text-decoration: underline;
+}
+
+.header .nav .nav__wide ul li.dropdown, .header .header-index .nav-index .nav-index__wide ul li.dropdown, .header-index .nav-index .header .nav-index__wide ul li.dropdown {
+  display: inline-block;
+}
+
+.header .nav .nav__wide ul .dropdown-content, .header .header-index .nav-index .nav-index__wide ul .dropdown-content, .header-index .nav-index .header .nav-index__wide ul .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /*min-width: 160px;*/
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.header .nav .nav__wide ul .dropdown-content a, .header .header-index .nav-index .nav-index__wide ul .dropdown-content a, .header-index .nav-index .header .nav-index__wide ul .dropdown-content a {
+  color: #0A0A09;
+  /*padding: 12px 16px;*/
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.header .nav .nav__wide ul .dropdown-content a:hover, .header .header-index .nav-index .nav-index__wide ul .dropdown-content a:hover, .header-index .nav-index .header .nav-index__wide ul .dropdown-content a:hover {
+  background-color: white;
+}
+
+.header .nav .nav__wide ul .dropdown:hover .dropdown-content, .header .header-index .nav-index .nav-index__wide ul .dropdown:hover .dropdown-content, .header-index .nav-index .header .nav-index__wide ul .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header .nav .nav__narrow, .header .header-index .nav-index .nav-index__narrow, .header-index .nav-index .header .nav-index__narrow {
+  z-index: 10;
+  padding-top: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .nav .nav__narrow ul, .header .header-index .nav-index .nav-index__narrow ul, .header-index .nav-index .header .nav-index__narrow ul {
+  height: 45px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  color: #0A0A09;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  /*.dropdown-content a:hover {background-color: #f1f1f1}*/
+}
+
+.header .nav .nav__narrow ul .hamburger, .header .header-index .nav-index .nav-index__narrow ul .hamburger, .header-index .nav-index .header .nav-index__narrow ul .hamburger {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.header .nav .nav__narrow ul li a, .header .header-index .nav-index .nav-index__narrow ul li a, .header-index .nav-index .header .nav-index__narrow ul li a, .header .nav .nav__narrow ul .dropbtn, .header .header-index .nav-index .nav-index__narrow ul .dropbtn, .header-index .nav-index .header .nav-index__narrow ul .dropbtn {
+  display: inline-block;
+  color: #0A0A09;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.header .nav .nav__narrow ul li a:hover, .header .header-index .nav-index .nav-index__narrow ul li a:hover, .header-index .nav-index .header .nav-index__narrow ul li a:hover, .header .nav .nav__narrow ul .dropdown:hover .dropbtn, .header .header-index .nav-index .nav-index__narrow ul .dropdown:hover .dropbtn, .header-index .nav-index .header .nav-index__narrow ul .dropdown:hover .dropbtn {
+  /*background-color: red;*/
+  text-decoration: underline;
+}
+
+.header .nav .nav__narrow ul li.dropdown, .header .header-index .nav-index .nav-index__narrow ul li.dropdown, .header-index .nav-index .header .nav-index__narrow ul li.dropdown {
+  display: inline-block;
+}
+
+.header .nav .nav__narrow ul .dropdown-content, .header .header-index .nav-index .nav-index__narrow ul .dropdown-content, .header-index .nav-index .header .nav-index__narrow ul .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /*min-width: 160px;*/
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  font-size: 16px;
+}
+
+.header .nav .nav__narrow ul .dropdown-content a, .header .header-index .nav-index .nav-index__narrow ul .dropdown-content a, .header-index .nav-index .header .nav-index__narrow ul .dropdown-content a {
+  color: #0A0A09;
+  /*padding: 12px 16px;*/
+  padding-bottom: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 10;
+  font-size: 16px;
+}
+
+.header .nav .nav__narrow ul .dropdown-content a:hover, .header .header-index .nav-index .nav-index__narrow ul .dropdown-content a:hover, .header-index .nav-index .header .nav-index__narrow ul .dropdown-content a:hover {
+  background-color: white;
+  /*text-decoration: underline;*/
+}
+
+.header .nav .nav__narrow ul .dropdown:hover .dropdown-content, .header .header-index .nav-index .nav-index__narrow ul .dropdown:hover .dropdown-content, .header-index .nav-index .header .nav-index__narrow ul .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.magic {
+  font-size: 24px;
+  color: white;
+}
+
+.magic .magic__put {
+  font-family: 'Oregano', cursive;
+}
+
+.magic .magic__contact {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 450px) {
+  .magic {
+    width: 300px;
+    padding-left: 10;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .magic {
+    width: 250px;
+  }
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 23, 2019, 12:27:39 AM
+    Author     : Norm
+*/
+.header-index {
+  width: 100%;
+  position: fixed;
+  top: -1px;
+  padding-right: 15px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "banner menu-wide";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+  z-index: 10;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-index * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+  .header-index {
+        grid-template-areas: "banner menu-narrow ";
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+  }
+}
+
+.header-index .elemental-shift {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: banner;
+  text-align: center;
+  /*border: 3px solid red;*/
+  font-size: 73px;
+}
+
+@media screen and (max-width: 700px) {
+  .header-index .elemental-shift {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header-index .elemental-shift {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-index .elemental-shift {
+    font-size: 48px;
+  }
+}
+
+.header-index .nav-index .nav-index__wide {
+  /*border: 3px solid red;*/
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: menu-wide;
+}
+
+@media screen and (max-width: 700px) {
+  .header-index .nav-index .nav-index__wide {
+    display: none;
+  }
+}
+
+.header-index .nav-index .nav-index__wide a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-index .nav-index .nav-index__narrow {
+  background-color: rgba(246, 248, 249, 0);
+  height: 50px;
+  grid-area: menu-narrow;
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .header-index .nav-index .nav-index__narrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header-index .header .nav .nav__wide, .header .nav .header-index .nav__wide, .header-index .nav-index .nav-index__wide {
+  z-index: 10;
+}
+
+.header-index .header .nav .nav__wide ul, .header .nav .header-index .nav__wide ul, .header-index .nav-index .nav-index__wide ul {
   top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,12 +865,12 @@ and open the template in the editor.
   font-size: 16px;
   color: black;
   font-weight: bold;
-  background-color: #F6F8F9;
+  background-color: rgba(246, 248, 249, 0);
   height: 50px;
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 }
 
-.header .nav .nav__wide ul li a, .header .nav .nav__wide ul .dropbtn {
+.header-index .header .nav .nav__wide ul li a, .header .nav .header-index .nav__wide ul li a, .header-index .nav-index .nav-index__wide ul li a, .header-index .header .nav .nav__wide ul .dropbtn, .header .nav .header-index .nav__wide ul .dropbtn, .header-index .nav-index .nav-index__wide ul .dropbtn {
   display: inline-block;
   color: #0A0A09;
   text-align: center;
@@ -590,16 +878,16 @@ and open the template in the editor.
   text-decoration: none;
 }
 
-.header .nav .nav__wide ul li a:hover, .header .nav .nav__wide ul .dropdown:hover .dropbtn {
+.header-index .header .nav .nav__wide ul li a:hover, .header .nav .header-index .nav__wide ul li a:hover, .header-index .nav-index .nav-index__wide ul li a:hover, .header-index .header .nav .nav__wide ul .dropdown:hover .dropbtn, .header .nav .header-index .nav__wide ul .dropdown:hover .dropbtn, .header-index .nav-index .nav-index__wide ul .dropdown:hover .dropbtn {
   /*background-color: red;*/
   text-decoration: underline;
 }
 
-.header .nav .nav__wide ul li.dropdown {
+.header-index .header .nav .nav__wide ul li.dropdown, .header .nav .header-index .nav__wide ul li.dropdown, .header-index .nav-index .nav-index__wide ul li.dropdown {
   display: inline-block;
 }
 
-.header .nav .nav__wide ul .dropdown-content {
+.header-index .header .nav .nav__wide ul .dropdown-content, .header .nav .header-index .nav__wide ul .dropdown-content, .header-index .nav-index .nav-index__wide ul .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -609,7 +897,7 @@ and open the template in the editor.
   z-index: 5;
 }
 
-.header .nav .nav__wide ul .dropdown-content a {
+.header-index .header .nav .nav__wide ul .dropdown-content a, .header .nav .header-index .nav__wide ul .dropdown-content a, .header-index .nav-index .nav-index__wide ul .dropdown-content a {
   color: #0A0A09;
   /*padding: 12px 16px;*/
   padding-top: 12px;
@@ -619,15 +907,15 @@ and open the template in the editor.
   text-align: left;
 }
 
-.header .nav .nav__wide ul .dropdown-content a:hover {
+.header-index .header .nav .nav__wide ul .dropdown-content a:hover, .header .nav .header-index .nav__wide ul .dropdown-content a:hover, .header-index .nav-index .nav-index__wide ul .dropdown-content a:hover {
   background-color: white;
 }
 
-.header .nav .nav__wide ul .dropdown:hover .dropdown-content {
+.header-index .header .nav .nav__wide ul .dropdown:hover .dropdown-content, .header .nav .header-index .nav__wide ul .dropdown:hover .dropdown-content, .header-index .nav-index .nav-index__wide ul .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.header .nav .nav__narrow {
+.header-index .header .nav .nav__narrow, .header .nav .header-index .nav__narrow, .header-index .nav-index .nav-index__narrow {
   z-index: 10;
   padding-top: 5px;
   -webkit-box-orient: vertical;
@@ -636,7 +924,7 @@ and open the template in the editor.
           flex-direction: column;
 }
 
-.header .nav .nav__narrow ul {
+.header-index .header .nav .nav__narrow ul, .header .nav .header-index .nav__narrow ul, .header-index .nav-index .nav-index__narrow ul {
   height: 45px;
   display: block;
   padding: 0;
@@ -647,7 +935,7 @@ and open the template in the editor.
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 }
 
-.header .nav .nav__narrow ul .hamburger {
+.header-index .header .nav .nav__narrow ul .hamburger, .header .nav .header-index .nav__narrow ul .hamburger, .header-index .nav-index .nav-index__narrow ul .hamburger {
   display: block;
   width: 35px;
   height: 4px;
@@ -655,7 +943,7 @@ and open the template in the editor.
   margin: 6px 0;
 }
 
-.header .nav .nav__narrow ul li a, .header .nav .nav__narrow ul .dropbtn {
+.header-index .header .nav .nav__narrow ul li a, .header .nav .header-index .nav__narrow ul li a, .header-index .nav-index .nav-index__narrow ul li a, .header-index .header .nav .nav__narrow ul .dropbtn, .header .nav .header-index .nav__narrow ul .dropbtn, .header-index .nav-index .nav-index__narrow ul .dropbtn {
   display: inline-block;
   color: #0A0A09;
   text-align: center;
@@ -664,16 +952,16 @@ and open the template in the editor.
   text-decoration: none;
 }
 
-.header .nav .nav__narrow ul li a:hover, .header .nav .nav__narrow ul .dropdown:hover .dropbtn {
+.header-index .header .nav .nav__narrow ul li a:hover, .header .nav .header-index .nav__narrow ul li a:hover, .header-index .nav-index .nav-index__narrow ul li a:hover, .header-index .header .nav .nav__narrow ul .dropdown:hover .dropbtn, .header .nav .header-index .nav__narrow ul .dropdown:hover .dropbtn, .header-index .nav-index .nav-index__narrow ul .dropdown:hover .dropbtn {
   /*background-color: red;*/
   text-decoration: underline;
 }
 
-.header .nav .nav__narrow ul li.dropdown {
+.header-index .header .nav .nav__narrow ul li.dropdown, .header .nav .header-index .nav__narrow ul li.dropdown, .header-index .nav-index .nav-index__narrow ul li.dropdown {
   display: inline-block;
 }
 
-.header .nav .nav__narrow ul .dropdown-content {
+.header-index .header .nav .nav__narrow ul .dropdown-content, .header .nav .header-index .nav__narrow ul .dropdown-content, .header-index .nav-index .nav-index__narrow ul .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -684,7 +972,7 @@ and open the template in the editor.
   font-size: 16px;
 }
 
-.header .nav .nav__narrow ul .dropdown-content a {
+.header-index .header .nav .nav__narrow ul .dropdown-content a, .header .nav .header-index .nav__narrow ul .dropdown-content a, .header-index .nav-index .nav-index__narrow ul .dropdown-content a {
   color: #0A0A09;
   /*padding: 12px 16px;*/
   padding-bottom: 12px;
@@ -695,12 +983,12 @@ and open the template in the editor.
   font-size: 16px;
 }
 
-.header .nav .nav__narrow ul .dropdown-content a:hover {
+.header-index .header .nav .nav__narrow ul .dropdown-content a:hover, .header .nav .header-index .nav__narrow ul .dropdown-content a:hover, .header-index .nav-index .nav-index__narrow ul .dropdown-content a:hover {
   background-color: white;
   /*text-decoration: underline;*/
 }
 
-.header .nav .nav__narrow ul .dropdown:hover .dropdown-content {
+.header-index .header .nav .nav__narrow ul .dropdown:hover .dropdown-content, .header .nav .header-index .nav__narrow ul .dropdown:hover .dropdown-content, .header-index .nav-index .nav-index__narrow ul .dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -760,16 +1048,20 @@ main .images {
 }
 
 main .images .forrest {
+  position: relative;
+  left: -8px;
+  top: -8px;
+  width: 110vw;
+  margin-left: 0;
   background-image: url("../images/fog_sherman_lake.png");
-  width: 100%;
   height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 3fr 1fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
 }

@@ -17,16 +17,15 @@ $text-color: #0A0A09;
 $text-color: red;
 
 
-.header {
+.header-index {
     * {
         box-sizing: border-box;
       }
     
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: -1px;
-    background-color: $menu-background-color;
-    // padding-right: 15px;
+    padding-right: 15px;
     // left: -10px;
     display: grid;
     grid-template-areas: "banner menu-wide";
@@ -57,11 +56,9 @@ $text-color: red;
 
     }
 
-    .nav {
-        .nav__wide {
-            // border: 3px solid red;
-            position: relative;
-            // right: -5px;
+    .nav-index {
+        .nav-index__wide {
+            /*border: 3px solid red;*/
             grid-area: menu-wide;
             @extend %menu-style-wide;
             @include max-mixin($breakPoint1) {
@@ -72,11 +69,9 @@ $text-color: red;
                 color: inherit;
             }
         }
-        .nav__narrow {
+        .nav-index__narrow {
             // border: 3px solid red;
-            background-color: $menu-background-color;
-            position: relative;
-            right: -5px;
+            background-color: rgba(246, 248, 249, 0); //$menu-background-color;
             height: 50px;
             // width: 100%;
             grid-area: menu-narrow;
@@ -100,14 +95,13 @@ $text-color: red;
             padding: 0;
             padding-top: 17px;
             margin: 0;
-            padding-left: 25px;
             // margin-right: 32.5px;
             overflow: hidden;
             font-family: Arial; //$font-openSans;
             font-size: 16px;
             color: black;
             font-weight: bold;
-            background-color: $menu-background-color;
+            background-color: rgba(246, 248, 249, 0); //$menu-background-color;
             // border-radius: 15px;
             height: 50px;
             // width: 95%;
@@ -165,7 +159,6 @@ $text-color: red;
         z-index: 10;
         // padding-bottom: 20px;
         padding-top: 5px;
-        // margin-left: -15px;
         // display: flex;
         flex-direction: column;
         ul {
@@ -182,7 +175,6 @@ $text-color: red;
 
             padding: 0;
             margin: 0;
-            // padding-left: 50px;
             // overflow: hidden;
             color: #0A0A09;
             // border-radius: 15px;

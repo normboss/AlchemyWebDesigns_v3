@@ -21,6 +21,7 @@ and open the template in the editor.
 @import url("https://use.typekit.net/cav8sep.css");
 @import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps");
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oregano&display=swap");
 .html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -209,7 +210,10 @@ font-family: 'Open Sans', sans-serif;
   background-color: #D4CD96;
   color: black;
   height: 50px;
-  padding-left: 50px;
+  padding-left: 25px;
+  position: relative;
+  left: -8px;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 750px) {
@@ -233,7 +237,7 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .header-logo__title {
     font-size: 16px;
   }
@@ -251,30 +255,10 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   .header-logo__sub-title {
     font-size: 14px;
   }
-}
-
-.foot {
-  background-color: #F6F8F9;
-  width: 100%;
-  height: 80px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding-top: 50px;
-}
-
-.foot__text {
-  font-size: 20px;
-  padding-top: 15px;
 }
 
 .logo__title {
@@ -346,7 +330,10 @@ font-family: 'Open Sans', sans-serif;
   background-color: #D4CD96;
   color: black;
   height: 50px;
-  padding-left: 50px;
+  padding-left: 25px;
+  position: relative;
+  left: -8px;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 750px) {
@@ -370,7 +357,7 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .header-logo__title {
     font-size: 16px;
   }
@@ -388,7 +375,7 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   .header-logo__sub-title {
     font-size: 14px;
   }
@@ -404,17 +391,28 @@ and open the template in the editor.
     Author     : Norm
 */
 .foot {
-  background-color: #9da5b2;
-  width: 100%;
+  position: relative;
+  margin-left: 25px;
+  width: 110vw;
+  left: -8px;
+  top: -8px;
   height: 80px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 50px;
   padding-bottom: 80px;
+  padding-right: 200px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: white;
+}
+
+@media screen and (max-width: 1050px) {
+  .foot {
+    padding-right: 100px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -424,20 +422,31 @@ and open the template in the editor.
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
-    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     height: 180px;
     padding-bottom: 50px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .foot {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
 .foot .small-logo {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+  .foot .small-logo {
+    margin: 0;
+  }
 }
 
 .foot .foot__text {
@@ -466,10 +475,10 @@ and open the template in the editor.
     Author     : Norm
 */
 .header {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: -1px;
-  padding-right: 15px;
+  background-color: #D4CD96;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "banner menu-wide";
@@ -524,7 +533,7 @@ and open the template in the editor.
 }
 
 .header .nav .nav__wide {
-  /*border: 3px solid red;*/
+  position: relative;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: menu-wide;
@@ -538,10 +547,13 @@ and open the template in the editor.
 
 .header .nav .nav__wide a {
   text-decoration: none;
+  color: inherit;
 }
 
 .header .nav .nav__narrow {
   background-color: #D4CD96;
+  position: relative;
+  right: -5px;
   height: 50px;
   grid-area: menu-narrow;
   display: none;
@@ -572,6 +584,7 @@ and open the template in the editor.
   padding: 0;
   padding-top: 17px;
   margin: 0;
+  padding-left: 25px;
   overflow: hidden;
   font-family: Arial;
   font-size: 16px;
@@ -702,6 +715,32 @@ and open the template in the editor.
 
 .header .nav .nav__narrow ul .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.magic {
+  font-size: 24px;
+  color: white;
+}
+
+.magic .magic__put {
+  font-family: 'Oregano', cursive;
+}
+
+.magic .magic__contact {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 450px) {
+  .magic {
+    width: 300px;
+    padding-left: 10;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .magic {
+    width: 250px;
+  }
 }
 
 .spacer30 {

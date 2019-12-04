@@ -57,7 +57,10 @@
     background-color: $menu-background-color;
     color: black;
     height: 50px;
-    padding-left: 50px;
+    padding-left: 25px;
+    position: relative;
+    left: -8px;
+    margin-right: 0;
     @include max-mixin(750px) {
         padding-left: 10px;
         padding-top: 10px;
@@ -71,7 +74,7 @@
             font-size: 20px;
             text-align: left;
         }
-        @include max-mixin(320px) {
+        @include max-mixin(350px) {
             font-size: 16px;
             // text-align: left;
         }
@@ -84,7 +87,7 @@
         @include max-mixin(750px) {
             font-size: 16px;
         }
-        @include max-mixin(300px) {
+        @include max-mixin(350px) {
             font-size: 14px;
         }
     }

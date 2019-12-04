@@ -41,77 +41,69 @@ and open the template in the editor.
     <main>
 
         <div class="portfolio">
-            <div class="box box1">
-                <div class="box11">Our Work</div>
-                <div class="box12">
-                    <a href="https://www.scottishwroughtiron.com" target="_blank">
-                        <img src="../images/AndySparks.png" 
-                        alt="Blacksmith Andy Leck working with sparks flying." <?php echo $altStyle ?>
-                        title="Blacksmith Andy Leck working with sparks flying."
-                        >
+            <div class="the-strip">
+                <div class="box box1">
+                    <div class="box11">Our Work</div>
+                    <div class="box12">
+                        <a href="https://www.scottishwroughtiron.com" target="_blank">
+                            <img src="../images/AndySparks.png" alt="Blacksmith Andy Leck working with sparks flying." <?php echo $altStyle ?> title="Blacksmith Andy Leck working with sparks flying.">
 
-                    </a>
-                </div>
-                <div class="box13">
-                    <a href="https://www.scottishwroughtiron.com" target="_blank">
-                        Scottish Lion Wrought Iron
-                    </a>
-                </div>
-                <div class="box14">
-                    <a href="https://www.mainevillageweaver.com" target="_blank">
-                        <img src="../images/PhyllisWorking.png" 
-                        alt="Weaver Phyllis Leck working at her loom." <?php echo $altStyle ?>>
-                    </a>
-                </div>
-                <div class="box15">
-                    <a href="https://www.mainevillageweaver.com" target="_blank">
-                        Maine Village Weaver
-                    </a>
-                </div>
-                <div class="box16">
-                    <a href="http://www.elementalshift.com" target="_blank">
-                        <img src="../images/Kirsten.png" 
-                        alt="Kirsten Jettinghoff mental health counselor." <?php echo $altStyle ?>>
-                    </a>
-                </div>
-                <div class="box17">
-                    <a href="http://www.elementalshift.com" target="_blank">
-                        Elemental Shift
-                    </a>
+                        </a>
+                    </div>
+                    <div class="box13">
+                        <a href="https://www.scottishwroughtiron.com" target="_blank">
+                            Scottish Lion Wrought Iron
+                        </a>
+                    </div>
+                    <div class="box14">
+                        <a href="https://www.mainevillageweaver.com" target="_blank">
+                            <img src="../images/PhyllisWorking.png" alt="Weaver Phyllis Leck working at her loom." <?php echo $altStyle ?>>
+                        </a>
+                    </div>
+                    <div class="box15">
+                        <a href="https://www.mainevillageweaver.com" target="_blank">
+                            Maine Village Weaver
+                        </a>
+                    </div>
+                    <div class="box16">
+                        <a href="http://www.elementalshift.com" target="_blank">
+                            <img src="../images/Kirsten.png" alt="Kirsten Jettinghoff mental health counselor." <?php echo $altStyle ?>>
+                        </a>
+                    </div>
+                    <div class="box17">
+                        <a href="http://www.elementalshift.com" target="_blank">
+                            Elemental Shift
+                        </a>
+                    </div>
+
                 </div>
 
-            </div>
-
-            <div class="box box2">
-                <div class="box20">
-                    <!-- <?php require '../includes/logo.php';     ?> -->
-                </div>
-                <div class="box21">
-                    Testimonial
-                </div>
-                <div class="box22">
-                    Alchemy Web Designs receives five star rating with us for
-                    their creative upgrading of our old Scottish Lion Wrought
-                    Iron and Maine Village Weaver websites. The company also
-                    gets five more stars for the good work after the sites were
-                    launched. Solving problems in a timely manor is extremely
-                    important to a successful small business and they do it
-                    well with such good quality and reasonable price points.
-                    A.E.Leck, Scottish Lion Wrought Iron
+                <div class="box box2">
+                    <div class="box20">
+                        <!-- <?php require '../includes/logo.php';     ?> -->
+                    </div>
+                    <div class="box21">
+                        Testimonial
+                    </div>
+                    <div class="box22">
+                        Alchemy Web Designs receives five star rating with us for
+                        their creative upgrading of our old Scottish Lion Wrought
+                        Iron and Maine Village Weaver websites. The company also
+                        gets five more stars for the good work after the sites were
+                        launched. Solving problems in a timely manor is extremely
+                        important to a successful small business and they do it
+                        well with such good quality and reasonable price points.
+                        A.E.Leck, Scottish Lion Wrought Iron
+                        <div class="spacer20"></div>
+                    </div>
+                    <div class="spacer20"></div>
+                    <?php
+                    require '../includes/magic.php';
+                    ?>
+                    <div class="spacer20"></div>
                     <div class="spacer20"></div>
                 </div>
-                <div class="spacer20"></div>
-                <div class="box23">
-                    Put the magic of the web&nbsp;to&nbsp;work.
-                </div>
-                <div class="spacer20"></div>
-                <div class="box24">
-                    Contact Us
-                </div>
-                <div class="spacer20"></div>
-                <div class="spacer20"></div>
             </div>
-        </div>
         </div>
     </main>
 

@@ -31,7 +31,7 @@ and open the template in the editor.
 <body>
 
     <?php
-        require './files/includes/header1.php';
+        require './files/includes/headerIndex.php';
     ?>
     <main>
 
@@ -46,9 +46,12 @@ and open the template in the editor.
                 <div class="box box3">
                 </div>
                 <div class="box box3">
-                    Put the Magic of the&nbsp;web to&nbsp;work
+                    <!-- Put the Magic of the&nbsp;web to&nbsp;work
                     <div class="spacer10"></div>
-                    <div class="smaller">Contact Us</div>
+                    <div class="smaller">Contact Us</div> -->
+                    <?php
+                        require './files/includes/magic.php';
+                    ?>
                 </div>
             </div>
         </div>

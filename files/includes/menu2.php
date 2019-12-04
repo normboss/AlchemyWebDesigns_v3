@@ -8,7 +8,7 @@
         <span class="menu-item"><a href="<?php echo $_SESSION['root'] . '/index.php' ?>">Home</a></span>
         <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/portfolio.php' ?>>Portfolio</a></span>
         <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/about.php' ?>>About</a></span>
-        <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/contact.php' ?>>Contact</a></span>
+        <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/contact1.php' ?>>Contact</a></span>
     </div>
 
     <!-- <div class="nav__main">
@@ -23,7 +23,7 @@
                     <a href=<?php echo $_SESSION['root'] . '/index.php' ?>>Home</a>
                     <a href=<?php echo $_SESSION['root'] . '/files/pages/portfolio.php' ?>>Portfolio</a>
                     <a href=<?php echo $_SESSION['root'] . '/files/pages/about.php' ?>>About</a>
-                    <a href=<?php echo $_SESSION['root'] . '/files/pages/contact.php' ?>>Contact</a>
+                    <a href=<?php echo $_SESSION['root'] . '/files/pages/contact1.php' ?>>Contact</a>
                 </div>
             </li>
         </ul>

@@ -1,21 +1,8 @@
-    <header class="header">
+    <header class="header-index">
         <!-- <div class='elemental-shift'>Elemental Shift</div> -->
-        <?php
-        if ( $_SESSION['pagename'] != "index" )
-            require 'header-logo.php';
-        ?>
 
-
-        <?php
-        // if ( $_SESSION['pagename'] == "contact" ) {
-        //     echo "<div class='elemental-shift'>Contact Kirsten</div>";
-        // } else {
-        //     echo "<div class='elemental-shift'>Elemental Shift</div>";
-        // }
-        ?>
-
-        <div class="nav">
-            <div class="nav__wide">
+        <div class="nav-index">
+            <div class="nav-index__wide">
                 <ul>
                     <span class="menu-item"><a href="<?php echo $_SESSION['root'] . '/index.php' ?>">Home</a></span>
                     <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/portfolio.php' ?>>Portfolio</a></span>
@@ -24,7 +11,7 @@
                 </ul>
             </div>
 
-            <div class="nav__narrow">
+            <div class="nav-index__narrow">
                 <ul>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">
@@ -45,7 +32,3 @@
             </div>
         </div>
     </header>
-    <?php
-        if ( $_SESSION['pagename'] != "index" )
-            require 'header-logo.php';
-        ?>

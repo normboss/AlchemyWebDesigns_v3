@@ -11,6 +11,7 @@ and open the template in the editor.
 $menu-background-color: #e8eced;
 @import "common";
 
+
 .spacer30 {
     height: 30px;
 }
@@ -56,6 +57,7 @@ $menu-background-color: #e8eced;
     }
 }
 $font-size: 16px;
+$breakpt1: 700px;
 
 main {
     margin: 0 auto;
@@ -90,179 +92,229 @@ main {
       font-family: 'Zeyada', cursive;*/
 
     .portfolio {
+        position: relative;
+        left: -8px;
+        top: -8px;
+        width: 110vw;
+
         background-image: url("../images/hero_folio1.png");
-        width: 100%;
+        // width: 100%;
         height: auto;
         background-size: cover;
         background-repeat: no-repeat;
         // background-position: bottom;
         background-position-x: center;
+        background-position-x: left;
         background-position-y: bottom;
-        display: flex;
-        padding-top: 200px;
-        padding-left: 50px;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-        @include max-mixin(700px) {
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 0;
-            padding-top: 150px;
-            background-position-x: right;
-        }
-
-        .box {
-            // border: 3px solid red;
-            width: 350px;
-            height: auto;
-            // background-color: white;
-            // border: 2px solid red;
-            color: 93999a;
-            margin-right: 10%;
-        }
-        // .box0 {
-        //     grid-column: 2 / span 2;
-        //     grid-row: 1 / span 1;
-        //     @import 'menu2';
-
-        // }
-
-        
-        .box1 {
-            border-block: 2px solid rgba(112, 112, 112, 1);
-            background-color: rgba(75, 86, 99, 0.59);
+        .the-strip {
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            color: white;
-            text-decoration: none;
-            // height: auto;
+            padding-top: 200px;
+            padding-left: 20%;
+            justify-content: flex-start;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: auto;
+            @include max-mixin(820px) {
+                padding-left: 10%;
+            }
             @include max-mixin(700px) {
+                flex-direction: column;
                 justify-content: center;
-                margin: 0 auto;
                 padding-left: 0;
+                padding-top: 150px;
+                background-position-x: right;
+            }
+            @include max-mixin(450px) {
+                width: 300px;
+            }
+            @include max-mixin(350px) {
                 width: 250px;
             }
 
-            
-            .box11 {
-                // border: 3px solid blue;
-                font-size: 32px;
-                padding-top: 10px;
-                padding-bottom: 6px;
+
+            .box {
+                // border: 3px solid red;
+                width: 350px;
+                height: auto;
+                // background-color: white;
+                // border: 2px solid red;
+                color: 93999a;
+                // margin-right: 10%;
+                @include max-mixin(450px) {
+                    // width: 300px;
+                    // padding-left: 50px;
+                    text-align: center;
+                }
+        
             }
-            .box12,
-            .box14,
-            .box16 {
-                // border: 3px solid blue;
-                img {
-                    width: 280px;
-                    // width: 80%;
-                    height: auto;
-                    text-decoration: none;
-                    @include max-mixin(700px) {
-                        justify-content: center;
+            // .box0 {
+            //     grid-column: 2 / span 2;
+            //     grid-row: 1 / span 1;
+            //     @import 'menu2';
+
+            // }
+
+            .box1 {
+                border-block: 2px solid rgba(112, 112, 112, 1);
+                background-color: rgba(75, 86, 99, 0.59);
+                // display: flex;
+                flex-direction: column;
+                color: white;
+                text-decoration: none;
+                // height: auto;
+                @include max-mixin($breakpt1) {
+                    justify-content: flex-start;
+                    margin: 0 auto;
+                    padding-left: 0;
+                    // width: 250px;
+                }
+                @include max-mixin(450px) {
+                    width: 300px;
+                    width: 100%;
+                    padding-left: 0;
+                }
+
+                .box11 {
+                    // border: 3px solid blue;
+                    font-size: 32px;
+                    padding-top: 10px;
+                    padding-bottom: 6px;
+                }
+                .box12,
+                .box14,
+                .box16 {
+                    // border: 3px solid blue;
+                    img {
+                        width: 280px;
+                        // width: 80%;
+                        height: auto;
+                        text-decoration: none;
                         margin: 0 auto;
-                        padding-left: 0;
-                        width: 220px;
+                        @include max-mixin($breakpt1) {
+                            justify-content: center;
+                            margin: 0 auto;
+                            padding-left: 0;
+                            // width: 220px;
+                        }
+                    }
+                    text-decoration: none;
+                }
+
+                .box13,
+                .box15,
+                .box17 {
+                    // border: 3px solid blue;
+                    // height: 50px;
+                    font-size: 20px;
+                    color: white;
+                    padding: 10px;
+                    a {
+                        // justify-self: center;
+                        color: white;
                     }
                 }
-                text-decoration: none;
             }
-           
-            .box13,
-            .box15,
-            .box17 {
-                // border: 3px solid blue;
-                // height: 50px;
-                font-size: 20px;
-                color: white;
-                padding: 10px;
-                a {
-                    // justify-self: center;
-                    color: white;
-                }
-            }
-        }
 
-        .box2 {
-            // border: 3px solid red;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            width: 300px;
-            @include max-mixin(700px) {
-                justify-content: center;
-                margin: 0 auto;
-                padding-left: 10px;
-                width: 250px;
-            }
-            .box20 {
-                .logo {
-                    color: white;
-                }
-            }
-            .box21 {
-                padding-top: 15px;
-                height: 50px;
-                background-color: rgba(255, 255, 255, 0.59);
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 32px;
-                font-weight: normal;
-                @include max-mixin(700px) {
-                    background-color: rgba(255, 255, 255, 0);
-                    color: white;
-                    font-weight: normal;
-                    text-align: left;
-                }
-            }
-            .box22 {
+            .box2 {
                 // border: 3px solid red;
-                // padding-top: 25px;
-                height: 280px;
-                background-color: rgba(255, 255, 255, 0.59);
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 16px;
-                font-weight: normal;
-                text-align: left;
-                padding-left: 20px;
-                padding-right: 20px;
-                overflow: hidden;
-                @include max-mixin(800px) {
-                    overflow: auto;
+                padding-left: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 300px;
+                overflow: auto;
+                @include max-mixin($breakpt1) {
+                    justify-content: center;
+                    margin: 0 auto;
+                    padding-left: 0px;
+                    width: 350px;
+                    height: auto;
                 }
-                @include max-mixin(700px) {
-                    background-color: rgba(255, 255, 255, 0);
-                    color: white;
-                    font-weight: normal;
-                    overflow: hidden;
-                    padding-left: 0;
+                    .box20 {
+                    .logo {
+                        color: white;
+                    }
+                }
+                @include max-mixin(350px) {
                     width: 250px;
                 }
-            }
-            .box23 {
-            }
+                .box21 {
+                    padding-top: 15px;
+                    height: 50px;
+                    background-color: rgba(255, 255, 255, 0.59);
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 32px;
+                    font-weight: normal;
+                    @include max-mixin($breakpt1) {
+                        background-color: rgba(255, 255, 255, .59);
+                        color: black; //white;
+                        font-weight: normal;
+                        text-align: center;
+                        width: 350px;
+                    }
+                    @include max-mixin(450px) {
+                        width: 300px;
+                        padding-left: 0;
+                    }
+                    }
+                .box22 {
+                    // border: 3px solid red;
+                    // padding-top: 25px;
+                    height: 280px;
+                    background-color: rgba(255, 255, 255, 0.59);
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    font-weight: normal;
+                    text-align: left;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    overflow: auto;
+                    @include max-mixin(800px) {
+                        overflow: auto;
+                    }
+                    @include max-mixin($breakpt1) {
+                        background-color: rgba(255, 255, 255, .59);
+                        color: black; //white;
+                        font-weight: normal;
+                        // overflow: hidden;
+                        // padding-left: 20px;
+                        width: 350px;
+                        height: auto;
+                    }
+                    @include max-mixin(450px) {
+                        width: 300px;
+                        padding-left: 10px;
+                    }
+                    @include max-mixin(350px) {
+                        width: 250px;
+                        // padding-left: 10px;
+                    }
+                }
+                .box23 {
+                }
 
-            .box23,
-            .box24 {
-                // border: 3px solid red;
-                font-family: Arial, Helvetica, sans-serif;
-                color: white;
-                font-size: 24px;
-                font-weight: bold;
-                width: 400px;
-                margin: 0 auto;
-                padding-left: -50px;
-                position: relative;
-                left: -50px;
-                @include max-mixin(750px) {
-                    font-size: 20px;
-                }
-                @include max-mixin(700px) {
-                    display: none;
+                .box23,
+                .box24 {
+                    // border: 3px solid red;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: white;
+                    font-size: 24px;
+                    font-weight: bold;
+                    width: 400px;
+                    margin: 0 auto;
+                    padding-left: -50px;
+                    position: relative;
+                    left: -50px;
+                    @include max-mixin(750px) {
+                        font-size: 20px;
+                    }
+                    @include max-mixin($breakpt1) {
+                        display: none;
+                    }
                 }
             }
-        }
-        .box3 {
+            .box3 {
+            }
         }
     }
 }

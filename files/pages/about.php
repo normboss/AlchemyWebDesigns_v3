@@ -27,6 +27,26 @@ and open the template in the editor.
     <!--<link rel="icon" href="./images/Image7.gif">-->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
+    <script>
+        function normEmailFunction() {
+            var email = document.getElementById("norm-email-input");
+            emailFunction(email);
+        }
+
+        function janeEmailFunction() {
+            var email = document.getElementById("jane-email-input");
+            emailFunction(email);
+        }
+        function emailFunction( node ) {
+            node.select();
+            node.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            // alert("Email copied to clipboard" + email.value);
+            alert("Email copied to clipboard");
+        }
+
+    </script>
+
 </head>
 
 <body>
@@ -62,9 +82,12 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="box box3">
-                Put the Magic of the&nbsp;web to&nbsp;work
+                <!-- Put the Magic of the&nbsp;web to&nbsp;work
                 <div class="spacer20"></div>
-                Contact Us.
+                Contact Us. -->
+                <?php
+                require '../includes/magic.php';
+                ?>
             </div>
             <div class="box box4">
                 Who we are
@@ -78,8 +101,10 @@ and open the template in the editor.
                     is a talented artist who lives in Damariscotta. If you want a custom
                     website or just fix up the visual presentation of what you already have,
                     Jane is the person to help you clarify your message and branding to attract
-                    attention. 
-                    <a href="mailto:Jane@AchemyWebDesigns.com">Email</a>
+                    attention.
+                    <!-- <a href="mailto:Jane@AchemyWebDesigns.com">Email</a> -->
+                    <!-- <input type="text" value="Jane@AchemyWebDesigns.com" id="jane-email-input"> -->
+                    <!-- <button class="email-btn" onclick="janeEmailFunction()" title="Copy email to clipboard.">Email</button> -->
                     <div class="spacer20"></div>
                 </div>
                 <div class="box box52">
@@ -87,11 +112,16 @@ and open the template in the editor.
                 </div>
                 <div class="box box51">
                     <h2>Norm Bosse</h2>
-                    worked for 35 years as software engineer and handles the actual
+                    is a software developer with over 30 years experience. Norm translates Jane's
+                    designs into code, ensuring that the websites perform well on all devices.
+                    Norm lives in East Boothbay.
+                    <!-- worked for 35 years as software engineer and handles the actual
                     construction of the Alchemy Web Designs for our customers.
                     This includes adding things like shopping carts, making sure the
-                    website works well on mobile devices and any custom programming.
-                    <a href="mailto:Norm@AchemyWebDesigns.com">Email</a>
+                    website works well on mobile devices and any custom programming. -->
+                    <!-- <a href="mailto:Norm@AchemyWebDesigns.com">Email</a> -->
+                    <!-- <input type="text" value="Norm@AchemyWebDesigns.com" id="norm-email-input"> -->
+                    <!-- <button class="email-btn" onclick="normEmailFunction()" title="Copy email to clipboard.">Email</button> -->
                 </div>
             </div>
         </div>
