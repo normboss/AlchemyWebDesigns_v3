@@ -11,7 +11,6 @@ and open the template in the editor.
 $menu-background-color: #e8eced;
 @import "common";
 
-
 .spacer30 {
     height: 30px;
 }
@@ -119,6 +118,7 @@ main {
             }
             @include max-mixin(700px) {
                 flex-direction: column;
+                flex-direction: column-reverse;
                 justify-content: center;
                 padding-left: 0;
                 padding-top: 150px;
@@ -126,11 +126,12 @@ main {
             }
             @include max-mixin(450px) {
                 width: 300px;
+                padding-left: 20px;
             }
             @include max-mixin(350px) {
                 width: 250px;
+                padding-left: 10px;
             }
-
 
             .box {
                 // border: 3px solid red;
@@ -145,7 +146,6 @@ main {
                     // padding-left: 50px;
                     text-align: center;
                 }
-        
             }
             // .box0 {
             //     grid-column: 2 / span 2;
@@ -182,7 +182,8 @@ main {
                 }
                 .box12,
                 .box14,
-                .box16 {
+                .box16,
+                .box18 {
                     // border: 3px solid blue;
                     img {
                         width: 280px;
@@ -202,7 +203,8 @@ main {
 
                 .box13,
                 .box15,
-                .box17 {
+                .box17,
+                .box19 {
                     // border: 3px solid blue;
                     // height: 50px;
                     font-size: 20px;
@@ -223,20 +225,28 @@ main {
                 justify-content: flex-end;
                 width: 300px;
                 overflow: auto;
+                margin: 0 auto;
                 @include max-mixin($breakpt1) {
                     justify-content: center;
                     margin: 0 auto;
-                    padding-left: 0px;
+                    padding-left: 25px;
                     width: 350px;
                     height: auto;
                 }
-                    .box20 {
+                @include max-mixin(325px) {
+                    width: 250px;
+                    padding-left: 10px;
+                    padding-left: 10px;
+                }
+                .box20 {
+                    width: 350px;
                     .logo {
                         color: white;
                     }
                 }
                 @include max-mixin(350px) {
                     width: 250px;
+                    padding-left: 10px;
                 }
                 .box21 {
                     padding-top: 15px;
@@ -246,17 +256,27 @@ main {
                     font-size: 32px;
                     font-weight: normal;
                     @include max-mixin($breakpt1) {
-                        background-color: rgba(255, 255, 255, .59);
+                        background-color: rgba(255, 255, 255, 0.59);
                         color: black; //white;
                         font-weight: normal;
                         text-align: center;
+                        margin: 0 auto;
                         width: 350px;
+                        padding-left: 25px;
                     }
                     @include max-mixin(450px) {
                         width: 300px;
-                        padding-left: 0;
+                        padding-left: 10px;
+                        margin-left: 30px;
                     }
+                    @include max-mixin(350px) {
+                        width: 250px;
+                        padding-left: 10px;
+                        margin: 0 auto;
+                        align-self: center;
+                        margin-right: 20px;
                     }
+                }
                 .box22 {
                     // border: 3px solid red;
                     // padding-top: 25px;
@@ -266,6 +286,7 @@ main {
                     font-size: 16px;
                     font-weight: normal;
                     text-align: left;
+                    margin: 0 auto;
                     padding-left: 20px;
                     padding-right: 20px;
                     overflow: auto;
@@ -273,21 +294,22 @@ main {
                         overflow: auto;
                     }
                     @include max-mixin($breakpt1) {
-                        background-color: rgba(255, 255, 255, .59);
+                        background-color: rgba(255, 255, 255, 0.59);
                         color: black; //white;
                         font-weight: normal;
                         // overflow: hidden;
-                        // padding-left: 20px;
+                        padding-left: 20px;
                         width: 350px;
                         height: auto;
                     }
                     @include max-mixin(450px) {
                         width: 300px;
                         padding-left: 10px;
+                        margin-left: 30px;
                     }
                     @include max-mixin(350px) {
                         width: 250px;
-                        // padding-left: 10px;
+                        padding-left: 10px;
                     }
                 }
                 .box23 {

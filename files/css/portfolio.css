@@ -834,6 +834,7 @@ main .portfolio .the-strip {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    flex-direction: column-reverse;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -846,12 +847,14 @@ main .portfolio .the-strip {
 @media screen and (max-width: 450px) {
   main .portfolio .the-strip {
     width: 300px;
+    padding-left: 20px;
   }
 }
 
 @media screen and (max-width: 350px) {
   main .portfolio .the-strip {
     width: 250px;
+    padding-left: 10px;
   }
 }
 
@@ -904,13 +907,15 @@ main .portfolio .the-strip .box1 .box11 {
 
 main .portfolio .the-strip .box1 .box12,
 main .portfolio .the-strip .box1 .box14,
-main .portfolio .the-strip .box1 .box16 {
+main .portfolio .the-strip .box1 .box16,
+main .portfolio .the-strip .box1 .box18 {
   text-decoration: none;
 }
 
 main .portfolio .the-strip .box1 .box12 img,
 main .portfolio .the-strip .box1 .box14 img,
-main .portfolio .the-strip .box1 .box16 img {
+main .portfolio .the-strip .box1 .box16 img,
+main .portfolio .the-strip .box1 .box18 img {
   width: 280px;
   height: auto;
   text-decoration: none;
@@ -920,7 +925,8 @@ main .portfolio .the-strip .box1 .box16 img {
 @media screen and (max-width: 700px) {
   main .portfolio .the-strip .box1 .box12 img,
   main .portfolio .the-strip .box1 .box14 img,
-  main .portfolio .the-strip .box1 .box16 img {
+  main .portfolio .the-strip .box1 .box16 img,
+  main .portfolio .the-strip .box1 .box18 img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -931,7 +937,8 @@ main .portfolio .the-strip .box1 .box16 img {
 
 main .portfolio .the-strip .box1 .box13,
 main .portfolio .the-strip .box1 .box15,
-main .portfolio .the-strip .box1 .box17 {
+main .portfolio .the-strip .box1 .box17,
+main .portfolio .the-strip .box1 .box19 {
   font-size: 20px;
   color: white;
   padding: 10px;
@@ -939,7 +946,8 @@ main .portfolio .the-strip .box1 .box17 {
 
 main .portfolio .the-strip .box1 .box13 a,
 main .portfolio .the-strip .box1 .box15 a,
-main .portfolio .the-strip .box1 .box17 a {
+main .portfolio .the-strip .box1 .box17 a,
+main .portfolio .the-strip .box1 .box19 a {
   color: white;
 }
 
@@ -957,6 +965,7 @@ main .portfolio .the-strip .box2 {
           justify-content: flex-end;
   width: 300px;
   overflow: auto;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 700px) {
@@ -965,10 +974,22 @@ main .portfolio .the-strip .box2 {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 auto;
-    padding-left: 0px;
+    padding-left: 25px;
     width: 350px;
     height: auto;
   }
+}
+
+@media screen and (max-width: 325px) {
+  main .portfolio .the-strip .box2 {
+    width: 250px;
+    padding-left: 10px;
+    padding-left: 10px;
+  }
+}
+
+main .portfolio .the-strip .box2 .box20 {
+  width: 350px;
 }
 
 main .portfolio .the-strip .box2 .box20 .logo {
@@ -978,6 +999,7 @@ main .portfolio .the-strip .box2 .box20 .logo {
 @media screen and (max-width: 350px) {
   main .portfolio .the-strip .box2 {
     width: 250px;
+    padding-left: 10px;
   }
 }
 
@@ -996,14 +1018,29 @@ main .portfolio .the-strip .box2 .box21 {
     color: black;
     font-weight: normal;
     text-align: center;
+    margin: 0 auto;
     width: 350px;
+    padding-left: 25px;
   }
 }
 
 @media screen and (max-width: 450px) {
   main .portfolio .the-strip .box2 .box21 {
     width: 300px;
-    padding-left: 0;
+    padding-left: 10px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .portfolio .the-strip .box2 .box21 {
+    width: 250px;
+    padding-left: 10px;
+    margin: 0 auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: 20px;
   }
 }
 
@@ -1014,6 +1051,7 @@ main .portfolio .the-strip .box2 .box22 {
   font-size: 16px;
   font-weight: normal;
   text-align: left;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   overflow: auto;
@@ -1030,6 +1068,7 @@ main .portfolio .the-strip .box2 .box22 {
     background-color: rgba(255, 255, 255, 0.59);
     color: black;
     font-weight: normal;
+    padding-left: 20px;
     width: 350px;
     height: auto;
   }
@@ -1039,12 +1078,14 @@ main .portfolio .the-strip .box2 .box22 {
   main .portfolio .the-strip .box2 .box22 {
     width: 300px;
     padding-left: 10px;
+    margin-left: 30px;
   }
 }
 
 @media screen and (max-width: 350px) {
   main .portfolio .the-strip .box2 .box22 {
     width: 250px;
+    padding-left: 10px;
   }
 }
 

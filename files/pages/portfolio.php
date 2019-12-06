@@ -75,6 +75,16 @@ and open the template in the editor.
                             Elemental Shift
                         </a>
                     </div>
+                    <div class="box18">
+                        <a href="http://www.sliceocountry.com" target="_blank">
+                            <img src="../images/slicecountrypage.png" alt="Sarah Brewer and Slice O Country products." <?php echo $altStyle ?>>
+                        </a>
+                    </div>
+                    <div class="box19">
+                        <a href="http://www.sliceocountry.com" target="_blank">
+                            Slice O' Country
+                        </a>
+                    </div>
 
                 </div>
 
