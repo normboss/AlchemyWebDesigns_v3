@@ -34,10 +34,14 @@ and open the template in the editor.
         align-items: center;
         height: 180px;
         padding-bottom: 50px;
-        padding-right: 0px;
+        padding-right: 50px;
     }
     @include max-mixin(450px) {
+        // width: 99%;
         align-items: flex-start;
+        align-items: center;
+        padding-left: 0;
+        margin-left: 0;
     }
     justify-content: space-around;
     color: white;
@@ -46,12 +50,13 @@ and open the template in the editor.
         // justify-content: center;
         margin: 0 auto;
         @include max-mixin(450px) {
-            margin: 0;
+            // margin: 0;
         }
     }
     .foot__text {
+        // border: 3px solid red;
         padding-right: 3%;
-        padding-left: 3%;
+        // padding-left: 3%;
         @include max-mixin(300px) {
             font-size: 16px;
         }

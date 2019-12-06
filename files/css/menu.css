@@ -191,6 +191,9 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .small-logo {
+  position: relative;
+  top: -15px;
+  height: 50px;
   background-color: #9DA5B2;
   color: white;
 }
@@ -311,6 +314,9 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .small-logo {
+  position: relative;
+  top: -15px;
+  height: 50px;
   background-color: #9DA5B2;
   color: white;
 }
@@ -435,7 +441,7 @@ and open the template in the editor.
             align-items: center;
     height: 180px;
     padding-bottom: 50px;
-    padding-right: 0px;
+    padding-right: 50px;
   }
 }
 
@@ -444,6 +450,11 @@ and open the template in the editor.
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+    margin-left: 0;
   }
 }
 
@@ -451,15 +462,8 @@ and open the template in the editor.
   margin: 0 auto;
 }
 
-@media screen and (max-width: 450px) {
-  .foot .small-logo {
-    margin: 0;
-  }
-}
-
 .foot .foot__text {
   padding-right: 3%;
-  padding-left: 3%;
 }
 
 @media screen and (max-width: 300px) {
@@ -692,6 +696,7 @@ and open the template in the editor.
 
 .header .nav .nav__narrow ul li.dropdown {
   display: inline-block;
+  width: 100px;
 }
 
 .header .nav .nav__narrow ul .dropdown-content {
