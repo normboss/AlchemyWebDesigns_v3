@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : Norm
 */
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Italianno&display=swap');
 $menu-background-color: #e8eced;
 @import "common";
 
@@ -253,6 +254,7 @@ main {
                     // width: 250px;
                     // width: 80%;
                     padding-left: 10px;
+                    margin-left: 10px;
                 }
                 .box21 {
                     width: 80%;
@@ -298,7 +300,7 @@ main {
                     // padding-top: 25px;
                     // height: 280px;
                     background-color: rgba(255, 255, 255, 0.59);
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: Open Sans;
                     font-size: 16px;
                     font-weight: normal;
                     text-align: left;
@@ -331,9 +333,20 @@ main {
                     @include max-mixin(350px) {
                     //     // width: 250px;
                     //     // padding-left: 10px;
-                        width: 100%;
+                        width: 95%;
                         padding-left: 25px;
+                        padding-right: 15px;
                         margin-left: 25px;
+                    }
+
+                    .make-bold {
+                        font-weight: bold;
+                    }
+                    .wrought-iron {
+                        font-family: 'IM Fell English SC', serif;
+                    }
+                    .village-weaver {
+                        font-family: 'Italianno', cursive;
                     }
                 }
                 .box23 {

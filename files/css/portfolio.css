@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : Norm
 */
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Italianno&display=swap");
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -994,6 +995,7 @@ main .portfolio .the-strip .box2 .box20 .logo {
 @media screen and (max-width: 350px) {
   main .portfolio .the-strip .box2 {
     padding-left: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -1034,7 +1036,7 @@ main .portfolio .the-strip .box2 .box21 {
 
 main .portfolio .the-strip .box2 .box22 {
   background-color: rgba(255, 255, 255, 0.59);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Open Sans;
   font-size: 16px;
   font-weight: normal;
   text-align: left;
@@ -1063,10 +1065,23 @@ main .portfolio .the-strip .box2 .box22 {
 
 @media screen and (max-width: 350px) {
   main .portfolio .the-strip .box2 .box22 {
-    width: 100%;
+    width: 95%;
     padding-left: 25px;
+    padding-right: 15px;
     margin-left: 25px;
   }
+}
+
+main .portfolio .the-strip .box2 .box22 .make-bold {
+  font-weight: bold;
+}
+
+main .portfolio .the-strip .box2 .box22 .wrought-iron {
+  font-family: 'IM Fell English SC', serif;
+}
+
+main .portfolio .the-strip .box2 .box22 .village-weaver {
+  font-family: 'Italianno', cursive;
 }
 
 main .portfolio .the-strip .box2 .box23,

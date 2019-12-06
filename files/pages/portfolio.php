@@ -96,14 +96,17 @@ and open the template in the editor.
                         Testimonial
                     </div>
                     <div class="box22">
-                        Alchemy Web Designs receives five star rating with us for
-                        their creative upgrading of our old Scottish Lion Wrought
-                        Iron and Maine Village Weaver websites. The company also
-                        gets five more stars for the good work after the sites were
+                        &quot;<span class="make-bold">Alchemy Web Designs</span>
+                         receives five star rating with us for
+                        their creative upgrading of our old 
+                        <span class="wrought-iron">Scottish Lion Wrought Iron</span> and 
+                        <span class="village-weaver">Maine Village Weaver</span> websites.<br>
+                        The company also gets five more stars for the good work after the sites were
                         launched. Solving problems in a timely manor is extremely
                         important to a successful small business and they do it
-                        well with such good quality and reasonable price points.
-                        A.E.Leck, Scottish Lion Wrought Iron
+                        well with such good quality and reasonable price points."
+                        <br>
+                        <span class="wrought-iron" style="font-weight: bold">Andy Leck, Scottish Lion Wrought Iron</span>
                         <div class="spacer20"></div>
                     </div>
                     <div class="spacer20"></div>
