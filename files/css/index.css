@@ -720,6 +720,21 @@ and open the template in the editor.
 .magic {
   font-size: 24px;
   color: white;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 920px) {
+  .magic {
+    width: 85%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .magic {
+    width: 100%;
+    margin: 20px;
+  }
 }
 
 .magic .magic__put {
@@ -728,19 +743,6 @@ and open the template in the editor.
 
 .magic .magic__contact {
   font-family: 'Open Sans', sans-serif;
-}
-
-@media screen and (max-width: 450px) {
-  .magic {
-    width: 300px;
-    padding-left: 10;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .magic {
-    width: 250px;
-  }
 }
 
 /*

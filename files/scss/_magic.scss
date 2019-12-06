@@ -6,7 +6,17 @@
     // border: 3px solid red;
     font-size: 24px;
     color: white;
-    
+    // width: 95%;
+    margin: 0 auto;
+
+    @include max-mixin(920px) {
+        width: 85%;
+        margin: 0;
+    }
+    @include max-mixin(700px) {
+        width: 100%;
+        margin: 20px;
+    }
     .magic__put {
         font-family: 'Oregano', cursive;
     }
@@ -16,13 +26,16 @@
     }
     @include max-mixin(450px) {
         // text-align: left;
-        width: 300px;
-        padding-left: 10;
+        // width: 300px;
+        // padding-left: 10;
     }
     @include max-mixin(350px) {
         // text-align: left;
-        width: 250px;
+        // width: 250px;
         // padding-left: 10;
+        // padding-left: 50px;
+        // padding-right: 25px;
+        // margin-left: 25px;
     }
 
 }

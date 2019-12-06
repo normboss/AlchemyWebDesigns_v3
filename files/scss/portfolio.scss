@@ -56,7 +56,7 @@ $menu-background-color: #e8eced;
     }
 }
 $font-size: 16px;
-$breakpt1: 700px;
+$breakpt1: 850px;
 
 main {
     margin: 0 auto;
@@ -219,25 +219,30 @@ main {
 
             .box2 {
                 // border: 3px solid red;
-                padding-left: 50px;
+                // padding-left: 50px;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-end;
-                width: 300px;
-                overflow: auto;
+                justify-content: flex-start;
+                height: auto;
+                width: 350px;
+                // overflow: auto;
                 margin: 0 auto;
                 @include max-mixin($breakpt1) {
-                    justify-content: center;
-                    margin: 0 auto;
-                    padding-left: 25px;
+                    // justify-content: center;
+                    // margin: 0 auto;
+                    // padding-left: 25px;
                     width: 350px;
                     height: auto;
                 }
-                @include max-mixin(325px) {
-                    width: 250px;
-                    padding-left: 10px;
-                    padding-left: 10px;
+                @include max-mixin(450px) {
+                    width: 300px;
+                    padding-left: 20px;
                 }
+                // @include max-mixin(325px) {
+                //     // width: 250px;
+                //     padding-left: 10px;
+                //     padding-left: 10px;
+                // }
                 .box20 {
                     width: 350px;
                     .logo {
@@ -245,71 +250,90 @@ main {
                     }
                 }
                 @include max-mixin(350px) {
-                    width: 250px;
+                    // width: 250px;
+                    // width: 80%;
                     padding-left: 10px;
                 }
                 .box21 {
+                    width: 80%;
                     padding-top: 15px;
-                    height: 50px;
+                    // height: 50px;
                     background-color: rgba(255, 255, 255, 0.59);
                     font-family: Arial, Helvetica, sans-serif;
                     font-size: 32px;
                     font-weight: normal;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-align: center;
+                    margin: 0 auto;
+
                     @include max-mixin($breakpt1) {
                         background-color: rgba(255, 255, 255, 0.59);
                         color: black; //white;
                         font-weight: normal;
                         text-align: center;
-                        margin: 0 auto;
-                        width: 350px;
-                        padding-left: 25px;
+                        margin: 0;
+                        // width: 350px;
+                        // padding-left: 20px;
+                        // padding-right: 15px;
                     }
-                    @include max-mixin(450px) {
-                        width: 300px;
-                        padding-left: 10px;
-                        margin-left: 30px;
+                    @include max-mixin(700px) {
+                        width: 100%;
+                    //     width: 300px;
+                    //     padding-left: 10px;
+                    //     margin-left: 30px;
+                    //     padding-right: 10px;
                     }
                     @include max-mixin(350px) {
-                        width: 250px;
-                        padding-left: 10px;
-                        margin: 0 auto;
-                        align-self: center;
-                        margin-right: 20px;
+                    //     // width: 250px;
+                    //     padding-left: 10px;
+                    //     margin: 0 auto;
+                    //     align-self: center;
+                    //     margin-right: 20px;
+                        width: 100%;
                     }
                 }
                 .box22 {
                     // border: 3px solid red;
                     // padding-top: 25px;
-                    height: 280px;
+                    // height: 280px;
                     background-color: rgba(255, 255, 255, 0.59);
                     font-family: Arial, Helvetica, sans-serif;
                     font-size: 16px;
                     font-weight: normal;
                     text-align: left;
                     margin: 0 auto;
+                    width: 80%;
                     padding-left: 20px;
                     padding-right: 20px;
-                    overflow: auto;
-                    @include max-mixin(800px) {
-                        overflow: auto;
-                    }
+                    // overflow: auto;
+                    // @include max-mixin(800px) {
+                    //     overflow: auto;
+                    // }
                     @include max-mixin($breakpt1) {
                         background-color: rgba(255, 255, 255, 0.59);
                         color: black; //white;
                         font-weight: normal;
                         // overflow: hidden;
                         padding-left: 20px;
-                        width: 350px;
+                        // width: 350px;
                         height: auto;
+                        margin: 0;
                     }
-                    @include max-mixin(450px) {
-                        width: 300px;
-                        padding-left: 10px;
-                        margin-left: 30px;
+                    @include max-mixin(700px) {
+                        width: 100%;
                     }
+                    // @include max-mixin(450px) {
+                    //     width: 300px;
+                    //     padding-left: 10px;
+                    //     margin-left: 30px;
+                    // }
                     @include max-mixin(350px) {
-                        width: 250px;
-                        padding-left: 10px;
+                    //     // width: 250px;
+                    //     // padding-left: 10px;
+                        width: 100%;
+                        padding-left: 25px;
+                        margin-left: 25px;
                     }
                 }
                 .box23 {
@@ -317,22 +341,29 @@ main {
 
                 .box23,
                 .box24 {
+                    width: 100%;
+                    @include max-mixin(900px) {
+                        width: 95%;
+                    }
+                    @include max-mixin(850px) {
+                        padding-left: 0;
+                    }
                     // border: 3px solid red;
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: white;
-                    font-size: 24px;
-                    font-weight: bold;
-                    width: 400px;
-                    margin: 0 auto;
-                    padding-left: -50px;
-                    position: relative;
-                    left: -50px;
-                    @include max-mixin(750px) {
-                        font-size: 20px;
-                    }
-                    @include max-mixin($breakpt1) {
-                        display: none;
-                    }
+                    // font-family: Arial, Helvetica, sans-serif;
+                    // color: white;
+                    // font-size: 24px;
+                    // font-weight: bold;
+                    // width: 400px;
+                    // margin: 0 auto;
+                    // padding-left: -50px;
+                    // position: relative;
+                    // left: -50px;
+                    // @include max-mixin(750px) {
+                    //     font-size: 20px;
+                    // }
+                    // @include max-mixin($breakpt1) {
+                    //     display: none;
+                    // }
                 }
             }
             .box3 {

@@ -720,6 +720,21 @@ and open the template in the editor.
 .magic {
   font-size: 24px;
   color: white;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 920px) {
+  .magic {
+    width: 85%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .magic {
+    width: 100%;
+    margin: 20px;
+  }
 }
 
 .magic .magic__put {
@@ -728,19 +743,6 @@ and open the template in the editor.
 
 .magic .magic__contact {
   font-family: 'Open Sans', sans-serif;
-}
-
-@media screen and (max-width: 450px) {
-  .magic {
-    width: 300px;
-    padding-left: 10;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .magic {
-    width: 250px;
-  }
 }
 
 .spacer30 {
@@ -881,7 +883,7 @@ main .portfolio .the-strip .box1 {
   text-decoration: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   main .portfolio .the-strip .box1 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -922,7 +924,7 @@ main .portfolio .the-strip .box1 .box18 img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   main .portfolio .the-strip .box1 .box12 img,
   main .portfolio .the-strip .box1 .box14 img,
   main .portfolio .the-strip .box1 .box16 img,
@@ -952,7 +954,6 @@ main .portfolio .the-strip .box1 .box19 a {
 }
 
 main .portfolio .the-strip .box2 {
-  padding-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -960,31 +961,25 @@ main .portfolio .the-strip .box2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 300px;
-  overflow: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: auto;
+  width: 350px;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   main .portfolio .the-strip .box2 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 auto;
-    padding-left: 25px;
     width: 350px;
     height: auto;
   }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 450px) {
   main .portfolio .the-strip .box2 {
-    width: 250px;
-    padding-left: 10px;
-    padding-left: 10px;
+    width: 300px;
+    padding-left: 20px;
   }
 }
 
@@ -998,121 +993,98 @@ main .portfolio .the-strip .box2 .box20 .logo {
 
 @media screen and (max-width: 350px) {
   main .portfolio .the-strip .box2 {
-    width: 250px;
     padding-left: 10px;
   }
 }
 
 main .portfolio .the-strip .box2 .box21 {
+  width: 80%;
   padding-top: 15px;
-  height: 50px;
   background-color: rgba(255, 255, 255, 0.59);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: normal;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   main .portfolio .the-strip .box2 .box21 {
     background-color: rgba(255, 255, 255, 0.59);
     color: black;
     font-weight: normal;
     text-align: center;
-    margin: 0 auto;
-    width: 350px;
-    padding-left: 25px;
+    margin: 0;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   main .portfolio .the-strip .box2 .box21 {
-    width: 300px;
-    padding-left: 10px;
-    margin-left: 30px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 350px) {
   main .portfolio .the-strip .box2 .box21 {
-    width: 250px;
-    padding-left: 10px;
-    margin: 0 auto;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-right: 20px;
+    width: 100%;
   }
 }
 
 main .portfolio .the-strip .box2 .box22 {
-  height: 280px;
   background-color: rgba(255, 255, 255, 0.59);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: normal;
   text-align: left;
   margin: 0 auto;
+  width: 80%;
   padding-left: 20px;
   padding-right: 20px;
-  overflow: auto;
 }
 
-@media screen and (max-width: 800px) {
-  main .portfolio .the-strip .box2 .box22 {
-    overflow: auto;
-  }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   main .portfolio .the-strip .box2 .box22 {
     background-color: rgba(255, 255, 255, 0.59);
     color: black;
     font-weight: normal;
     padding-left: 20px;
-    width: 350px;
     height: auto;
+    margin: 0;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   main .portfolio .the-strip .box2 .box22 {
-    width: 300px;
-    padding-left: 10px;
-    margin-left: 30px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 350px) {
   main .portfolio .the-strip .box2 .box22 {
-    width: 250px;
-    padding-left: 10px;
+    width: 100%;
+    padding-left: 25px;
+    margin-left: 25px;
   }
 }
 
 main .portfolio .the-strip .box2 .box23,
 main .portfolio .the-strip .box2 .box24 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  width: 400px;
-  margin: 0 auto;
-  padding-left: -50px;
-  position: relative;
-  left: -50px;
+  width: 100%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   main .portfolio .the-strip .box2 .box23,
   main .portfolio .the-strip .box2 .box24 {
-    font-size: 20px;
+    width: 95%;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   main .portfolio .the-strip .box2 .box23,
   main .portfolio .the-strip .box2 .box24 {
-    display: none;
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

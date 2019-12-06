@@ -107,9 +107,11 @@ and open the template in the editor.
                         <div class="spacer20"></div>
                     </div>
                     <div class="spacer20"></div>
+                    <div class="box23">
                     <?php
                     require '../includes/magic.php';
                     ?>
+                    </div>
                     <div class="spacer20"></div>
                     <div class="spacer20"></div>
                 </div>
