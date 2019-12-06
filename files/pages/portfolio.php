@@ -106,7 +106,7 @@ and open the template in the editor.
                         important to a successful small business and they do it
                         well with such good quality and reasonable price points."
                         <br>
-                        <span class="wrought-iron" style="font-weight: bold">Andy Leck, Scottish Lion Wrought Iron</span>
+                        <span class="wrought-iron" style="font-weight: bold">Andy Leck, <br>Scottish Lion Wrought Iron</span>
                         <div class="spacer20"></div>
                     </div>
                     <div class="spacer20"></div>
