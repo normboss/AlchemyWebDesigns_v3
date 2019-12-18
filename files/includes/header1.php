@@ -1,17 +1,8 @@
     <header class="header">
-        <!-- <div class='elemental-shift'>Elemental Shift</div> -->
+
         <?php
         if ( $_SESSION['pagename'] != "index" )
             require 'header-logo.php';
-        ?>
-
-
-        <?php
-        // if ( $_SESSION['pagename'] == "contact" ) {
-        //     echo "<div class='elemental-shift'>Contact Kirsten</div>";
-        // } else {
-        //     echo "<div class='elemental-shift'>Elemental Shift</div>";
-        // }
         ?>
 
         <div class="nav">
@@ -20,7 +11,7 @@
                     <span class="menu-item"><a href="<?php echo $_SESSION['root'] . '/index.php' ?>">Home</a></span>
                     <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/portfolio.php' ?>>Portfolio</a></span>
                     <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/about.php' ?>>About</a></span>
-                    <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/contact1.php' ?>>Contact</a></span>
+                    <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/contact1.php' ?>  target="_blank">Contact</a></span>
                 </ul>
             </div>
 
@@ -36,7 +27,7 @@
                             <a href="<?php echo $_SESSION['root'] . '/index.php' ?>">Home</a>
                             <a href=<?php echo $_SESSION['root'] . '/files/pages/portfolio.php' ?>>Portfolio</a>
                             <a href=<?php echo $_SESSION['root'] . '/files/pages/about.php' ?>>About</a>
-                            <a href=<?php echo $_SESSION['root'] . '/files/pages/contact1.php' ?>>Contact</a>
+                            <a href=<?php echo $_SESSION['root'] . '/files/pages/contact1.php' ?>  target="_blank">Contact</a>
 
                         </div>
                     </li>

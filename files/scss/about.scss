@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : Aug 29, 2018, 10:01:37 AM
     Author     : Norm
 */
+
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 $menu-background-color: #dce6e8;
 @import "common";
@@ -95,6 +96,7 @@ main {
         top: -8px;
         width: 110vw;
 
+        
         background-image: url("../images/hero_about.png");
         // background-image: url("../images/fog_sherman_lake.png");
         // background-image: url("../images/EnchantedForest.png");
@@ -107,6 +109,8 @@ main {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-position-x: center;
+        background-position-y: bottom;
         display: grid;
         grid-template-columns: 1fr 3fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;

@@ -3,5 +3,7 @@
         Put the Magic of the&nbsp;web to&nbsp;work
     </div>
     <div class="spacer10"></div>
-    <div class="magic__contact">Contact Us</div>
+    <!-- <div class="magic__contact">Contact Us</div> -->
+    <a class="magic__contact" href=<?php echo $_SESSION['root'] . '/files/pages/contact1.php' ?> target="_blank">Contact Us</a>
+
 </div>

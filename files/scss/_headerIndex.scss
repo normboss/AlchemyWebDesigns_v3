@@ -38,27 +38,9 @@ $text-color: red;
     }
     align-items: center;
 
-    .elemental-shift {
-        grid-area: banner;
-        text-align: center;
-        @include max-mixin($breakPoint1) {
-            text-align: left;
-        }    
-        /*border: 3px solid red;*/
-        @extend %font-h1;
-        font-size: 73px;
-        @include max-mixin(450px) {
-            font-size: 60px;
-        }
-        @include max-mixin(400px) {
-            font-size: 48px;
-        }
-
-    }
-
     .nav-index {
         .nav-index__wide {
-            /*border: 3px solid red;*/
+            // border: 3px solid red;
             grid-area: menu-wide;
             @extend %menu-style-wide;
             @include max-mixin($breakPoint1) {

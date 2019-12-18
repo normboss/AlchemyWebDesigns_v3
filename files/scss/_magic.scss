@@ -8,7 +8,7 @@
     color: white;
     // width: 95%;
     margin: 0 auto;
-
+    
     @include max-mixin(920px) {
         width: 85%;
         margin: 0;
@@ -21,8 +21,10 @@
         font-family: 'Oregano', cursive;
     }
 
-    .magic__contact {
+    a.magic__contact {
         font-family: 'Open Sans', sans-serif;
+        color: white;
+        text-decoration: none;
     }
     @include max-mixin(450px) {
         // text-align: left;

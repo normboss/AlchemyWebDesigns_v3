@@ -22,14 +22,6 @@ and open the template in the editor.
 
 <body>
     <header class="header">
-        <div class='elemental-shift'>Elemental Shift</div>
-        <?php
-            // if ( $_SESSION['pagename'] == "contact" ) {
-            //     echo "<div class='elemental-shift'>Contact Kirsten</div>";
-            // } else {
-            //     echo "<div class='elemental-shift'>Elemental Shift</div>";
-            // }
-        ?>
 
         <nav>
             <div class="wide-menu">

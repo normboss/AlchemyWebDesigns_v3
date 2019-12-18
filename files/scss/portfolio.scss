@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : Aug 29, 2018, 10:01:37 AM
     Author     : Norm
 */
+
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Italianno&display=swap');
 $menu-background-color: #e8eced;
@@ -357,6 +358,7 @@ main {
 
                 .box23,
                 .box24 {
+                    font-weight: normal;
                     width: 100%;
                     @include max-mixin(900px) {
                         width: 95%;

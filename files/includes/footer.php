@@ -15,7 +15,9 @@
         <script>
             var foot = document.getElementById("footer");
             var logo = document.getElementById("small-logo-id");
-            var pagename = <?php echo '"' . $_SESSION['pagename'] . '"'; ?>;
+            // var pagename = <?php //echo '"' . $_SESSION['pagename'] . '"'; ?>;
+
+            var pagename = "<?php echo $_SESSION['pagename'] ?>";
             if (pagename == 'contact') {
                 foot.style.backgroundColor = '#A8985F';
                 logo.style.backgroundColor = '#A8985F';

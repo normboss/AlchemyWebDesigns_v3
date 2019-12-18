@@ -39,29 +39,11 @@ $text-color: red;
     }
     align-items: center;
 
-    .elemental-shift {
-        grid-area: banner;
-        text-align: center;
-        @include max-mixin($breakPoint1) {
-            text-align: left;
-        }    
-        /*border: 3px solid red;*/
-        @extend %font-h1;
-        font-size: 73px;
-        @include max-mixin(450px) {
-            font-size: 60px;
-        }
-        @include max-mixin(400px) {
-            font-size: 48px;
-        }
-
-    }
 
     .nav {
         .nav__wide {
             // border: 3px solid red;
             position: relative;
-            // right: -5px;
             grid-area: menu-wide;
             @extend %menu-style-wide;
             @include max-mixin($breakPoint1) {
@@ -165,7 +147,6 @@ $text-color: red;
         z-index: 10;
         // padding-bottom: 20px;
         padding-top: 5px;
-        // margin-left: -15px;
         // display: flex;
         flex-direction: column;
         ul {
@@ -182,7 +163,6 @@ $text-color: red;
 
             padding: 0;
             margin: 0;
-            // padding-left: 50px;
             // overflow: hidden;
             color: #0A0A09;
             // border-radius: 15px;
