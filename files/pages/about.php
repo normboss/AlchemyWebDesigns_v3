@@ -66,19 +66,11 @@ and open the template in the editor.
                 </div>
                 <div class="spacer20"></div>
                 <div class="text">
-                    We offer custom tailored web sites for small businesses in mid-coast Maine.
+                    We offer custom tailored web sites for small businesses in&nbsp;mid&#8209;coast&nbsp;Maine. 
                     Our small size and local focus allows us to give personal attention to every client.
-                </div>
-                <div class="spacer20"></div>
-                <div class="text">
                     After a site is up and running we maintain it with product updates
-                    and changed information.
-                </div>
-                <div class="spacer20"></div>
-                <div class="text">
-                    We are available to listen and respond effectively.
-                </div>
-                <div>
+                    and&nbsp;changed&nbsp;information.<br>
+                    We are available to listen and respond&nbsp;effectively.
                 </div>
             </div>
             <div class="box box3">
