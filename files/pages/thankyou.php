@@ -52,7 +52,7 @@ and open the template in the editor.
 <body>
 
     <?php
-    require '../includes/header1.php';
+    // require '../includes/header1.php';
     $altStyle = 'style="text-align: center; display: block; font-size: 24px; 
                 font-style: italic; font-family: Arial; font-weight: normal; text-decoration: none; color: black;"';
     ?>
