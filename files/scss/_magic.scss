@@ -20,27 +20,16 @@
     }
     .magic__put {
         font-family: 'Oregano', cursive;
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
     }
 
     a.magic__contact {
         font-family: 'Open Sans', sans-serif;
         color: white;
         text-decoration: none;
+        animation: moveInBottom .5s ease-out 1.5s;
+        animation-fill-mode: backwards;
     }
-    @include max-mixin(450px) {
-        // text-align: left;
-        // width: 300px;
-        // padding-left: 10;
-    }
-    @include max-mixin(350px) {
-        // text-align: left;
-        // width: 250px;
-        // padding-left: 10;
-        // padding-left: 50px;
-        // padding-right: 25px;
-        // margin-left: 25px;
-    }
-    animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
 
 }

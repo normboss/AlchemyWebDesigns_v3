@@ -781,20 +781,24 @@ and open the template in the editor.
   font-size: 24px;
   color: white;
   margin: 0 auto;
+}
+
+.magic .magic__put {
+  font-family: 'Oregano', cursive;
   -webkit-animation: moveInBottom .5s ease-out .75s;
           animation: moveInBottom .5s ease-out .75s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 
-.magic .magic__put {
-  font-family: 'Oregano', cursive;
-}
-
 .magic a.magic__contact {
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
+  -webkit-animation: moveInBottom .5s ease-out 1.5s;
+          animation: moveInBottom .5s ease-out 1.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .contact-container {
