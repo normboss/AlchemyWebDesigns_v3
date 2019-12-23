@@ -92,7 +92,11 @@ main {
     .contact-container {
         background-image: url("../images/hero_contact.png");
         width: 100%;
-        height: auto; //90vh;
+        position: relative;
+        left: -8px;
+        top: -8px;
+        width: 110vw;
+    height: auto; //90vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

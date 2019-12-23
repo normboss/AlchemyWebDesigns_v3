@@ -821,6 +821,9 @@ main {
   font-size: 28px;
   /*word-spacing: -5px;*/
   /*letter-spacing: 20px;*/
+  position: relative;
+  left: -8px;
+  width: 110vw;
   font-family: "Dancing Script", cursive;
   font-size: 64px;
   font-weight: bold;
@@ -1010,7 +1013,6 @@ main .portfolio .the-strip .box2 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   height: auto;
-  width: 350px;
   margin: 0 auto;
 }
 
@@ -1022,7 +1024,7 @@ main .portfolio .the-strip .box2 {
 
 @media screen and (max-width: 450px) {
   main .portfolio .the-strip .box2 {
-    padding-left: 5px;
+    width: 300px;
     margin: 0 auto;
   }
 }
@@ -1033,6 +1035,14 @@ main .portfolio .the-strip .box2 .box20 {
 
 main .portfolio .the-strip .box2 .box20 .logo {
   color: white;
+}
+
+@media screen and (max-width: 350px) {
+  main .portfolio .the-strip .box2 {
+    margin-left: 0px;
+    width: 100%;
+    padding-right: 20px;
+  }
 }
 
 main .portfolio .the-strip .box2 .box21 {

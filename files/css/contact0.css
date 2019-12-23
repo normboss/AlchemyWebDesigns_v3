@@ -851,6 +851,10 @@ main .small-text {
 main .contact-container {
   background-image: url("../images/hero_contact.png");
   width: 100%;
+  position: relative;
+  left: -8px;
+  top: -8px;
+  width: 110vw;
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;

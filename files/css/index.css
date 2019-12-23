@@ -1074,12 +1074,13 @@ main .images {
 }
 
 main .images .forrest {
+  position: relative;
   left: -8px;
   top: -8px;
   width: 110vw;
   margin-left: 0;
+  height: 700px;
   background-image: url("../images/fog_sherman_lake.png");
-  height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -93,7 +93,7 @@ and open the template in the editor.
                             Jane Herbert
                         </a>
                     </div>
-
+                    <div class="spacer20"></div>
                 </div>
 
                 <div class="box box2">
