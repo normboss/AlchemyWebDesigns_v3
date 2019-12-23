@@ -115,7 +115,6 @@ font-family: 'Major Mono Display', monospace;
 font-family: 'Open Sans', sans-serif;
 */
 .logo__title {
-  position: absolute;
   left: 25%;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
@@ -139,7 +138,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .logo__sub-title {
-  position: absolute;
   left: 50%;
   top: 24%;
   color: #93999a;
@@ -341,7 +339,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .logo__title {
-  position: absolute;
   left: 25%;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
@@ -365,7 +362,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .logo__sub-title {
-  position: absolute;
   left: 50%;
   top: 24%;
   color: #93999a;
@@ -1078,7 +1074,6 @@ main .images {
 }
 
 main .images .forrest {
-  position: relative;
   left: -8px;
   top: -8px;
   width: 110vw;

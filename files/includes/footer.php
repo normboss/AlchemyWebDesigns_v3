@@ -24,6 +24,9 @@
             } else if (pagename == 'about') {
                 foot.style.backgroundColor = '#454F52';
                 logo.style.backgroundColor = '#454F52';
+            } else if (pagename == 'thankyou') {
+                foot.style.backgroundColor = '#273F4B';
+                logo.style.backgroundColor = '#273F4B';
             } else {
                 foot.style.backgroundColor = '#9da5b2';
             }

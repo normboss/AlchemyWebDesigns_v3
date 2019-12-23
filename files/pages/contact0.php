@@ -61,7 +61,7 @@ and open the template in the editor.
                     <label for="message">Message</label>
                     <textarea cols="40" maxlength="1000" name="message" rows="5"></textarea>
                     <input type="hidden" name="required" value="email,message">
-                    <input type="hidden" name="thankyou_url" value="https://www.alchemywebdesigns.com/files/pages/html/thankyou.html">
+                    <input type="hidden" name="thankyou_url" value="https://www.alchemywebdesigns.com/files/pages/thankyou.php">
                     <label for="submit"></label>
                     <input type="submit" name="submit" value="Send">
                 </form>
