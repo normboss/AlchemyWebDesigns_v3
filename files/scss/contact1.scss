@@ -8,7 +8,6 @@ and open the template in the editor.
     Author     : Norm
 */
 
-
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 $menu-background-color: #dce6e8;
 @import "common";
@@ -16,10 +15,10 @@ $menu-background-color: #dce6e8;
 body {
 }
 
-
 .contact-container {
     margin: 0 auto;
     width: 70%;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     @include max-mixin(600px) {
@@ -31,14 +30,14 @@ body {
         /*border: 3px solid red;*/
         width: 100%;
     }
-    
+
     .title {
         /*border: 2px solid red;*/
         /*padding-top: 25px;*/
         margin: 0 auto;
         // @include font1;
         font-family: "Open Sans", sans-serif;
-/*        @include max-mixin(700px) {
+        /*        @include max-mixin(700px) {
             @include font2M;
         }*/
         text-align: center;
@@ -55,8 +54,8 @@ body {
         grid-column: 1 / span 1;
         grid-row: 1 / span 2;
     }
-    
-        .form-container {
+
+    .form-container {
         @include max-mixin(600px) {
             padding-top: 20px;
             padding-bottom: 20px;
@@ -75,7 +74,7 @@ body {
             font-style: italic;
         }
 
-        textArea {
+        textarea {
             height: 190px;
             height: auto;
             /*width: 400px;*/
@@ -104,14 +103,14 @@ body {
             resize: none;
             color: #000000;
         }
-        
+
         .submit {
             width: 50%;
             /*margin: 10px 0 20px 0;*/
             cursor: pointer;
             color: #444;
             color: red;
-            font: 16px 'Oswald', Verdana, Helvetica, sans-serif;
+            font: 16px "Oswald", Verdana, Helvetica, sans-serif;
             font-weight: normal;
             padding: 2px 18px;
             text-decoration: none;
@@ -128,8 +127,6 @@ body {
             border: solid 1px #435299;
             border-radius: 5px;
         }
-
-
     }
     .logo {
         display: flex;
@@ -160,7 +157,6 @@ body {
         .title {
             font-family: "Open Sans", sans-serif;
             @include max-mixin(500px) {
-                
             }
             font-weight: bold;
         }

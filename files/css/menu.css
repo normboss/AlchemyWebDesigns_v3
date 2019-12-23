@@ -123,11 +123,15 @@ font-family: 'Major Mono Display', monospace;
 font-family: 'Open Sans', sans-serif;
 */
 .logo__title {
+  position: absolute;
+  left: 25%;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
   font-size: 64px;
   word-spacing: 10px;
+  -webkit-animation: moveInLeft 2s ease-out;
+          animation: moveInLeft 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -143,11 +147,16 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .logo__sub-title {
+  position: absolute;
+  left: 50%;
+  top: 24%;
   color: #93999a;
   font-weight: 450;
   font-family: "Nothing You Could Do", cursive;
   font-size: 36px;
   letter-spacing: 6px;
+  -webkit-animation: moveInRight 2s ease-out;
+          animation: moveInRight 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -245,12 +254,110 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  80% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  80% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
 .logo__title {
+  position: absolute;
+  left: 25%;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
   font-size: 64px;
   word-spacing: 10px;
+  -webkit-animation: moveInLeft 2s ease-out;
+          animation: moveInLeft 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -266,11 +373,16 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .logo__sub-title {
+  position: absolute;
+  left: 50%;
+  top: 24%;
   color: #93999a;
   font-weight: 450;
   font-family: "Nothing You Could Do", cursive;
   font-size: 36px;
   letter-spacing: 6px;
+  -webkit-animation: moveInRight 2s ease-out;
+          animation: moveInRight 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -677,23 +789,14 @@ and open the template in the editor.
 }
 
 .magic {
+  position: relative;
   font-size: 24px;
   color: white;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 920px) {
-  .magic {
-    width: 85%;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .magic {
-    width: 100%;
-    margin: 20px;
-  }
+  -webkit-animation: moveInBottom .5s ease-out .75s;
+          animation: moveInBottom .5s ease-out .75s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .magic .magic__put {

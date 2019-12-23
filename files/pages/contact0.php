@@ -38,22 +38,20 @@ and open the template in the editor.
     <main>
 
         <div class="contact-container">
-            <div class="box box1">
-                <br><br>
-                <?php
-                //  require '../includes/logo.php'; 
-                ?>
+            <br>
+            <div class="magic-block">
                 <?php
                 require '../includes/magic.php';
                 ?>
             </div>
-
-            <div class="box box3">
-            </div>
-            <div class="box form-container">
-                <!-- <div> -->
-                    We enjoy meeting and working with people who love what they do. Connect with us and together We will create an on line presence that effectively represents your vision.
-                <!-- </div> -->
+            <div class="spacer20"></div>
+            <div class="form-container">
+                <div>
+                    We enjoy meeting and working with people who love what they do. 
+                    <br>
+                    <div class="spacer10"></div>
+                    Connect with us and together We will create an on line presence that effectively represents your vision.
+                </div>
                 <form method="post" class="contactform" action="https://www1.domain.com/scripts/formemail.bml" name="contactform">
                     <input type="hidden" name="my_email" value="norm.bosse0@gmail.com">
                     <label for="email">Your Email Address</label>

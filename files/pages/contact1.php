@@ -60,12 +60,16 @@ and open the template in the editor.
               <input maxlength="50" name="first_name" size="40" type="text">
               <label for="last_name">Last Name *</label>
               <input maxlength="50" name="last_name" size="40" type="text">   -->
+
               <label for="email">Your Email Address</label> 
               <input maxlength="80" name="email" size="40" type="text">
+
               <label for="subject">Subject</label> 
               <input maxlength="80" name="subject" size="40" type="text">
+
               <!-- <label for="telephone">Telephone Number</label> 
               <input maxlength="40" name="telephone" size="40" type="text">  -->
+              
               <label for="message">Message</label>
               <textarea cols="40" maxlength="1000" name="message" rows="5"></textarea>
 

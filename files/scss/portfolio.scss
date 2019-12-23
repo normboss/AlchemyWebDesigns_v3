@@ -8,10 +8,12 @@ and open the template in the editor.
     Author     : Norm
 */
 
+
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Italianno&display=swap');
 $menu-background-color: #e8eced;
 @import "common";
+
 
 .spacer30 {
     height: 30px;
@@ -127,12 +129,12 @@ main {
                 background-position-x: right;
             }
             @include max-mixin(450px) {
-                width: 300px;
-                padding-left: 20px;
+                // width: 300px;
+                // padding-left: 20px;
             }
             @include max-mixin(350px) {
-                width: 250px;
-                padding-left: 10px;
+                // width: 250px;
+                // padding-left: 10px;
             }
 
             .box {
@@ -187,7 +189,8 @@ main {
                 .box12,
                 .box14,
                 .box16,
-                .box18 {
+                .box18,
+                .box-even {
                     // border: 3px solid blue;
                     img {
                         width: 280px;
@@ -208,7 +211,8 @@ main {
                 .box13,
                 .box15,
                 .box17,
-                .box19 {
+                .box19,
+                .box-odd {
                     // border: 3px solid blue;
                     // height: 50px;
                     font-size: 20px;
@@ -218,6 +222,7 @@ main {
                         // justify-self: center;
                         color: white;
                     }
+                    text-decoration: none;
                 }
             }
 
@@ -235,12 +240,14 @@ main {
                     // justify-content: center;
                     // margin: 0 auto;
                     // padding-left: 25px;
-                    width: 350px;
+                    // width: 350px;
                     height: auto;
                 }
                 @include max-mixin(450px) {
-                    width: 300px;
-                    padding-left: 20px;
+                    // width: 300px;
+                    padding-left: 5px;
+                    // margin-left: 25px;
+                    margin: 0 auto;
                 }
                 // @include max-mixin(325px) {
                 //     // width: 250px;
@@ -256,8 +263,8 @@ main {
                 @include max-mixin(350px) {
                     // width: 250px;
                     // width: 80%;
-                    padding-left: 10px;
-                    margin-left: 10px;
+                    // padding-left: 10px;
+                    // margin-left: 10px;
                 }
                 .box21 {
                     width: 80%;
@@ -295,7 +302,7 @@ main {
                     //     margin: 0 auto;
                     //     align-self: center;
                     //     margin-right: 20px;
-                        width: 100%;
+                        // width: 100%;
                     }
                 }
                 .box22 {
@@ -320,7 +327,7 @@ main {
                         color: black; //white;
                         font-weight: normal;
                         // overflow: hidden;
-                        padding-left: 20px;
+                        // padding-left: 20px;
                         // width: 350px;
                         height: auto;
                         margin: 0;
@@ -337,10 +344,11 @@ main {
                     @include max-mixin(350px) {
                     //     // width: 250px;
                     //     // padding-left: 10px;
-                        width: 95%;
-                        padding-left: 25px;
-                        padding-right: 15px;
-                        margin-left: 25px;
+                        // width: 95%;
+                        // padding-left: 25px;
+                        // padding-right: 15px;
+                        // margin-left: 25px;
+                        padding-right: 20px;
                     }
 
                     .make-bold {

@@ -115,11 +115,15 @@ font-family: 'Major Mono Display', monospace;
 font-family: 'Open Sans', sans-serif;
 */
 .logo__title {
+  position: absolute;
+  left: 25%;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
   font-size: 64px;
   word-spacing: 10px;
+  -webkit-animation: moveInLeft 2s ease-out;
+          animation: moveInLeft 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -135,11 +139,16 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .logo__sub-title {
+  position: absolute;
+  left: 50%;
+  top: 24%;
   color: #93999a;
   font-weight: 450;
   font-family: "Nothing You Could Do", cursive;
   font-size: 36px;
   letter-spacing: 6px;
+  -webkit-animation: moveInRight 2s ease-out;
+          animation: moveInRight 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -183,7 +192,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo {
-  background-color: #D4CD96;
+  background-color: #d4cd96;
   color: black;
   height: 50px;
   padding-left: 25px;
@@ -237,12 +246,110 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  80% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  80% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
 .logo__title {
+  position: absolute;
+  left: 25%;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
   font-size: 64px;
   word-spacing: 10px;
+  -webkit-animation: moveInLeft 2s ease-out;
+          animation: moveInLeft 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -258,11 +365,16 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .logo__sub-title {
+  position: absolute;
+  left: 50%;
+  top: 24%;
   color: #93999a;
   font-weight: 450;
   font-family: "Nothing You Could Do", cursive;
   font-size: 36px;
   letter-spacing: 6px;
+  -webkit-animation: moveInRight 2s ease-out;
+          animation: moveInRight 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -306,7 +418,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo {
-  background-color: #D4CD96;
+  background-color: #d4cd96;
   color: black;
   height: 50px;
   padding-left: 25px;
@@ -455,7 +567,7 @@ and open the template in the editor.
   width: 100vw;
   position: fixed;
   top: -1px;
-  background-color: #D4CD96;
+  background-color: #d4cd96;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "banner menu-wide";
@@ -501,7 +613,7 @@ and open the template in the editor.
 }
 
 .header .nav .nav__narrow {
-  background-color: #D4CD96;
+  background-color: #d4cd96;
   position: relative;
   right: -5px;
   height: 50px;
@@ -540,7 +652,7 @@ and open the template in the editor.
   font-size: 16px;
   color: black;
   font-weight: bold;
-  background-color: #D4CD96;
+  background-color: #d4cd96;
   height: 50px;
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 }
@@ -669,23 +781,14 @@ and open the template in the editor.
 }
 
 .magic {
+  position: relative;
   font-size: 24px;
   color: white;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 920px) {
-  .magic {
-    width: 85%;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .magic {
-    width: 100%;
-    margin: 20px;
-  }
+  -webkit-animation: moveInBottom .5s ease-out .75s;
+          animation: moveInBottom .5s ease-out .75s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .magic .magic__put {
@@ -749,7 +852,7 @@ main .small-text {
   font-weight: bold;
 }
 
-main .images .forrest {
+main .contact-container {
   background-image: url("../images/hero_contact.png");
   width: 100%;
   height: 90vh;
@@ -764,13 +867,162 @@ main .images .forrest {
       grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-main .images .forrest .box {
+main .contact-container .form-container {
+  border: 3px solid red;
+  background-color: #F4E1B7;
+  font-family: "Open Sans";
+  font-size: 14px;
+  margin: 0 auto;
+  width: 70%;
+  padding-left: 25px;
+  padding-right: 25px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  main .contact-container .form-container {
+    display: block;
+  }
+}
+
+main .contact-container .form-container .box {
+  /*border: 3px solid red;*/
+  width: 100%;
+}
+
+main .contact-container .form-container .title {
+  /*border: 2px solid red;*/
+  /*padding-top: 25px;*/
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  /*        @include max-mixin(700px) {
+                        @include font2M;
+                    }*/
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 24px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+}
+
+main .contact-container .form-container .copy {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / span 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+}
+
+main .contact-container .form-container .image {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+main .contact-container .form-container .contactform {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3, span 1;
+  /*width: 90%;*/
+  border: 0px solid blue;
+  width: 100%;
+  /*padding-left: 20px;*/
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  main .contact-container .form-container .contactform {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+main .contact-container .form-container .contactform .diagnostic {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}
+
+main .contact-container .form-container .contactform textarea {
+  height: 190px;
+  height: auto;
+  /*width: 400px;*/
+  width: 100%;
+}
+
+main .contact-container .form-container .contactform label {
+  width: 99%;
+  text-align: left;
+  font-style: italic;
+  display: block;
+  margin-bottom: 4px;
+}
+
+main .contact-container .form-container .contactform input {
+  width: 99%;
+  border: 1px #ccc solid;
+  background-color: #f5f5f5;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+main .contact-container .form-container .contactform textarea {
+  width: 99%;
+  border: 1px #ccc solid;
+  background-color: #f5f5f5;
+  padding: 5px;
+  resize: none;
+  color: #000000;
+}
+
+main .contact-container .form-container .contactform .submit {
+  width: 50%;
+  /*margin: 10px 0 20px 0;*/
+  cursor: pointer;
+  color: #444;
+  color: red;
+  font: 16px "Oswald", Verdana, Helvetica, sans-serif;
+  font-weight: normal;
+  padding: 2px 18px;
+  text-decoration: none;
+  background-color: #f8f8f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#d8d8d8));
+  background: linear-gradient(#f8f8f8, #d8d8d8);
+  border: solid 1px #d8d8d8;
+  border-radius: 5px;
+}
+
+main .contact-container .form-container .contactform .submit:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #7b88c5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7b88c5), to(#435299));
+  background: linear-gradient(#7b88c5, #435299);
+  border: solid 1px #435299;
+  border-radius: 5px;
+}
+
+main .contact-container .box {
   width: 66%;
   height: auto;
   color: 93999a;
 }
 
-main .images .forrest .box1 {
+main .contact-container .box1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
@@ -790,7 +1042,7 @@ main .images .forrest .box1 {
 }
 
 @media screen and (max-width: 750px) {
-  main .images .forrest .box1 {
+  main .contact-container .box1 {
     text-align: center;
     width: 100%;
     -ms-grid-column-align: center;
@@ -798,7 +1050,7 @@ main .images .forrest .box1 {
   }
 }
 
-main .images .forrest .box1 .title {
+main .contact-container .box1 .title {
   font-family: "Major Mono Display", monospace;
   font-weight: 800;
   font-size: 64px;
@@ -806,24 +1058,24 @@ main .images .forrest .box1 .title {
 }
 
 @media screen and (max-width: 400px) {
-  main .images .forrest .box1 .title {
+  main .contact-container .box1 .title {
     font-size: 48px;
   }
 }
 
-main .images .forrest .box1 .sub-title {
+main .contact-container .box1 .sub-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 32px;
 }
 
 @media screen and (max-width: 400px) {
-  main .images .forrest .box1 .sub-title {
+  main .contact-container .box1 .sub-title {
     font-size: 28px;
   }
 }
 
-main .images .forrest .box2 {
+main .contact-container .box2 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
@@ -841,7 +1093,7 @@ main .images .forrest .box2 {
   width: 80%;
 }
 
-main .images .forrest .box3 {
+main .contact-container .box3 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2 / span 2;
@@ -866,11 +1118,11 @@ main .images .forrest .box3 {
           align-items: center;
 }
 
-main .images .forrest .box3 ul {
+main .contact-container .box3 ul {
   text-align: left;
 }
 
-main .images .forrest .box3 .smaller {
+main .contact-container .box3 .smaller {
   font-size: 24px;
 }
 /*# sourceMappingURL=contact.css.map */

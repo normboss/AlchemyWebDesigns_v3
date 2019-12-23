@@ -48,39 +48,49 @@ and open the template in the editor.
 
                         </a>
                     </div>
-                    <div class="box13">
+                    <div class="box13 box-odd">
                         <a href="https://www.scottishwroughtiron.com" target="_blank">
                             Scottish Lion Wrought Iron
                         </a>
                     </div>
-                    <div class="box14">
+                    <div class="box14 box-even">
                         <a href="https://www.mainevillageweaver.com" target="_blank">
                             <img src="../images/PhyllisWorking.png" alt="Weaver Phyllis Leck working at her loom." <?php echo $altStyle ?>>
                         </a>
                     </div>
-                    <div class="box15">
+                    <div class="box15 box-odd">
                         <a href="https://www.mainevillageweaver.com" target="_blank">
                             Maine Village Weaver
                         </a>
                     </div>
-                    <div class="box16">
+                    <div class="box16 box-even">
                         <a href="http://www.elementalshift.com" target="_blank">
                             <img src="../images/Kirsten.png" alt="Kirsten Jettinghoff mental health counselor." <?php echo $altStyle ?>>
                         </a>
                     </div>
-                    <div class="box17">
+                    <div class="box17 box-odd">
                         <a href="http://www.elementalshift.com" target="_blank">
                             Elemental Shift
                         </a>
                     </div>
-                    <div class="box18">
+                    <div class="box18 box-even">
                         <a href="http://www.sliceocountry.com" target="_blank">
                             <img src="../images/slicecountrypage.png" alt="Sarah Brewer and Slice O Country products." <?php echo $altStyle ?>>
                         </a>
                     </div>
-                    <div class="box19">
+                    <div class="box19 box-odd">
                         <a href="http://www.sliceocountry.com" target="_blank">
                             Slice O' Country
+                        </a>
+                    </div>
+                    <div class="box-even">
+                        <a href="http://www.janeherbert.com" target="_blank">
+                            <img src="../images/ubiquity_alchemy.png" alt="Sarah Brewer and Slice O Country products." <?php echo $altStyle ?>>
+                        </a>
+                    </div>
+                    <div class="box-odd">
+                        <a href="http://www.janeherbert.com" target="_blank">
+                            Jane Herbert
                         </a>
                     </div>
 

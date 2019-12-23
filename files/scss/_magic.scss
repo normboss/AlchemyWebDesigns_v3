@@ -4,18 +4,19 @@
 
 .magic {
     // border: 3px solid red;
+    position: relative;
     font-size: 24px;
     color: white;
     // width: 95%;
     margin: 0 auto;
     
     @include max-mixin(920px) {
-        width: 85%;
-        margin: 0;
+        // width: 85%;
+        // margin: 0;
     }
     @include max-mixin(700px) {
-        width: 100%;
-        margin: 20px;
+        // width: 100%;
+        // margin: 20px;
     }
     .magic__put {
         font-family: 'Oregano', cursive;
@@ -39,5 +40,7 @@
         // padding-right: 25px;
         // margin-left: 25px;
     }
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
 
 }

@@ -1,6 +1,8 @@
 
 .logo {
     &__title {
+        position: absolute;
+        left: 25%;
         font-family: "Major Mono Display", monospace;
         color: #93999a;
         @include min-mixin(1300px) {
@@ -12,8 +14,14 @@
         @include max-mixin(400px) {
             font-size: 48px;
         }
+
+        animation: moveInLeft 2s ease-out;
+
     }
     &__sub-title {
+        position: absolute;
+        left: 50%;
+        top: 24%;
         color: #93999a;
         font-weight: 450;
         @include min-mixin(1300px) {
@@ -26,6 +34,7 @@
         @include max-mixin(400px) {
             font-size: 28px;
         }
+        animation: moveInRight 2s ease-out;
     }
 }
 

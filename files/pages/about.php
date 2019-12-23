@@ -37,14 +37,14 @@ and open the template in the editor.
             var email = document.getElementById("jane-email-input");
             emailFunction(email);
         }
-        function emailFunction( node ) {
+
+        function emailFunction(node) {
             node.select();
             node.setSelectionRange(0, 99999)
             document.execCommand("copy");
             // alert("Email copied to clipboard" + email.value);
             alert("Email copied to clipboard");
         }
-
     </script>
 
 </head>
@@ -52,7 +52,6 @@ and open the template in the editor.
 <body>
 
     <?php
-    //  require '../includes/menu2.php'; 
     require '../includes/header1.php';
     $altStyle = 'style="text-align: center; display: block; font-size: 24px; 
                 font-style: italic; font-family: Arial; font-weight: normal; text-decoration: none; color: black;"';
@@ -66,7 +65,7 @@ and open the template in the editor.
                 </div>
                 <div class="spacer20"></div>
                 <div class="text">
-                    We offer custom tailored web sites for small businesses in&nbsp;mid&#8209;coast&nbsp;Maine. 
+                    We offer custom tailored web sites for small businesses in&nbsp;mid&#8209;coast&nbsp;Maine.
                     Our small size and local focus allows us to give personal attention to every client.
                     After a site is up and running we maintain it with product updates
                     and&nbsp;changed&nbsp;information.<br>

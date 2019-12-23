@@ -116,11 +116,15 @@ font-family: 'Major Mono Display', monospace;
 font-family: 'Open Sans', sans-serif;
 */
 .logo__title {
+  position: absolute;
+  left: 25%;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
   font-size: 64px;
   word-spacing: 10px;
+  -webkit-animation: moveInLeft 2s ease-out;
+          animation: moveInLeft 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -136,11 +140,16 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .logo__sub-title {
+  position: absolute;
+  left: 50%;
+  top: 24%;
   color: #93999a;
   font-weight: 450;
   font-family: "Nothing You Could Do", cursive;
   font-size: 36px;
   letter-spacing: 6px;
+  -webkit-animation: moveInRight 2s ease-out;
+          animation: moveInRight 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -238,12 +247,110 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  80% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  80% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
 .logo__title {
+  position: absolute;
+  left: 25%;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
   font-size: 64px;
   word-spacing: 10px;
+  -webkit-animation: moveInLeft 2s ease-out;
+          animation: moveInLeft 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -259,11 +366,16 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .logo__sub-title {
+  position: absolute;
+  left: 50%;
+  top: 24%;
   color: #93999a;
   font-weight: 450;
   font-family: "Nothing You Could Do", cursive;
   font-size: 36px;
   letter-spacing: 6px;
+  -webkit-animation: moveInRight 2s ease-out;
+          animation: moveInRight 2s ease-out;
 }
 
 @media screen and (min-width: 1300px) {
@@ -670,23 +782,14 @@ and open the template in the editor.
 }
 
 .magic {
+  position: relative;
   font-size: 24px;
   color: white;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 920px) {
-  .magic {
-    width: 85%;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .magic {
-    width: 100%;
-    margin: 20px;
-  }
+  -webkit-animation: moveInBottom .5s ease-out .75s;
+          animation: moveInBottom .5s ease-out .75s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .magic .magic__put {
@@ -800,20 +903,6 @@ main .portfolio .the-strip {
   }
 }
 
-@media screen and (max-width: 450px) {
-  main .portfolio .the-strip {
-    width: 300px;
-    padding-left: 20px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  main .portfolio .the-strip {
-    width: 250px;
-    padding-left: 10px;
-  }
-}
-
 main .portfolio .the-strip .box {
   width: 350px;
   height: auto;
@@ -864,14 +953,16 @@ main .portfolio .the-strip .box1 .box11 {
 main .portfolio .the-strip .box1 .box12,
 main .portfolio .the-strip .box1 .box14,
 main .portfolio .the-strip .box1 .box16,
-main .portfolio .the-strip .box1 .box18 {
+main .portfolio .the-strip .box1 .box18,
+main .portfolio .the-strip .box1 .box-even {
   text-decoration: none;
 }
 
 main .portfolio .the-strip .box1 .box12 img,
 main .portfolio .the-strip .box1 .box14 img,
 main .portfolio .the-strip .box1 .box16 img,
-main .portfolio .the-strip .box1 .box18 img {
+main .portfolio .the-strip .box1 .box18 img,
+main .portfolio .the-strip .box1 .box-even img {
   width: 280px;
   height: auto;
   text-decoration: none;
@@ -882,7 +973,8 @@ main .portfolio .the-strip .box1 .box18 img {
   main .portfolio .the-strip .box1 .box12 img,
   main .portfolio .the-strip .box1 .box14 img,
   main .portfolio .the-strip .box1 .box16 img,
-  main .portfolio .the-strip .box1 .box18 img {
+  main .portfolio .the-strip .box1 .box18 img,
+  main .portfolio .the-strip .box1 .box-even img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -894,16 +986,19 @@ main .portfolio .the-strip .box1 .box18 img {
 main .portfolio .the-strip .box1 .box13,
 main .portfolio .the-strip .box1 .box15,
 main .portfolio .the-strip .box1 .box17,
-main .portfolio .the-strip .box1 .box19 {
+main .portfolio .the-strip .box1 .box19,
+main .portfolio .the-strip .box1 .box-odd {
   font-size: 20px;
   color: white;
   padding: 10px;
+  text-decoration: none;
 }
 
 main .portfolio .the-strip .box1 .box13 a,
 main .portfolio .the-strip .box1 .box15 a,
 main .portfolio .the-strip .box1 .box17 a,
-main .portfolio .the-strip .box1 .box19 a {
+main .portfolio .the-strip .box1 .box19 a,
+main .portfolio .the-strip .box1 .box-odd a {
   color: white;
 }
 
@@ -925,15 +1020,14 @@ main .portfolio .the-strip .box2 {
 
 @media screen and (max-width: 850px) {
   main .portfolio .the-strip .box2 {
-    width: 350px;
     height: auto;
   }
 }
 
 @media screen and (max-width: 450px) {
   main .portfolio .the-strip .box2 {
-    width: 300px;
-    padding-left: 20px;
+    padding-left: 5px;
+    margin: 0 auto;
   }
 }
 
@@ -943,13 +1037,6 @@ main .portfolio .the-strip .box2 .box20 {
 
 main .portfolio .the-strip .box2 .box20 .logo {
   color: white;
-}
-
-@media screen and (max-width: 350px) {
-  main .portfolio .the-strip .box2 {
-    padding-left: 10px;
-    margin-left: 10px;
-  }
 }
 
 main .portfolio .the-strip .box2 .box21 {
@@ -981,12 +1068,6 @@ main .portfolio .the-strip .box2 .box21 {
   }
 }
 
-@media screen and (max-width: 350px) {
-  main .portfolio .the-strip .box2 .box21 {
-    width: 100%;
-  }
-}
-
 main .portfolio .the-strip .box2 .box22 {
   background-color: rgba(255, 255, 255, 0.59);
   font-family: Open Sans;
@@ -1004,7 +1085,6 @@ main .portfolio .the-strip .box2 .box22 {
     background-color: rgba(255, 255, 255, 0.59);
     color: black;
     font-weight: normal;
-    padding-left: 20px;
     height: auto;
     margin: 0;
   }
@@ -1018,10 +1098,7 @@ main .portfolio .the-strip .box2 .box22 {
 
 @media screen and (max-width: 350px) {
   main .portfolio .the-strip .box2 .box22 {
-    width: 95%;
-    padding-left: 25px;
-    padding-right: 15px;
-    margin-left: 25px;
+    padding-right: 20px;
   }
 }
 
