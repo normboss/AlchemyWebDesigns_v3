@@ -122,8 +122,8 @@ font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 64px;
   word-spacing: 10px;
-  -webkit-animation: moveInLeft 2s ease-out;
-          animation: moveInLeft 2s ease-out;
+  -webkit-animation: moveInLeft 2s ease-in;
+          animation: moveInLeft 2s ease-in;
 }
 
 @media screen and (min-width: 1300px) {
@@ -140,14 +140,14 @@ font-family: 'Open Sans', sans-serif;
 
 .logo__sub-title {
   left: 50%;
-  top: 24%;
+  top: 35%;
   color: #93999a;
   font-weight: 450;
   font-family: "Nothing You Could Do", cursive;
   font-size: 36px;
   letter-spacing: 6px;
-  -webkit-animation: moveInRight 2s ease-out;
-          animation: moveInRight 2s ease-out;
+  -webkit-animation: moveInRight 4s ease-in;
+          animation: moveInRight 4s ease-in;
 }
 
 @media screen and (min-width: 1300px) {
@@ -248,68 +248,44 @@ font-family: 'Open Sans', sans-serif;
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-10rem);
-            transform: translateX(-10rem);
   }
   80% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
   }
 }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-10rem);
-            transform: translateX(-10rem);
   }
   80% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
   }
 }
 
 @-webkit-keyframes moveInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(10rem);
-            transform: translateX(10rem);
   }
   80% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
   }
 }
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(10rem);
-            transform: translateX(10rem);
   }
   80% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
   }
 }
 
@@ -346,8 +322,8 @@ font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 64px;
   word-spacing: 10px;
-  -webkit-animation: moveInLeft 2s ease-out;
-          animation: moveInLeft 2s ease-out;
+  -webkit-animation: moveInLeft 2s ease-in;
+          animation: moveInLeft 2s ease-in;
 }
 
 @media screen and (min-width: 1300px) {
@@ -364,14 +340,14 @@ font-family: 'Open Sans', sans-serif;
 
 .logo__sub-title {
   left: 50%;
-  top: 24%;
+  top: 35%;
   color: #93999a;
   font-weight: 450;
   font-family: "Nothing You Could Do", cursive;
   font-size: 36px;
   letter-spacing: 6px;
-  -webkit-animation: moveInRight 2s ease-out;
-          animation: moveInRight 2s ease-out;
+  -webkit-animation: moveInRight 4s ease-in;
+          animation: moveInRight 4s ease-in;
 }
 
 @media screen and (min-width: 1300px) {

@@ -264,6 +264,10 @@ main {
             padding-right: 25px;
             text-align: left;
             width: 100%;
+            // &:hover {
+            //     font-size: 22px;
+            // }
+
             @include max-mixin(400px) {
                 padding-left: 5px;
                 padding-right: 5px;
@@ -276,6 +280,7 @@ main {
                 &:hover {
                     background: #ff9800;
                     color: white;
+                    font-size: 32px;
                 }
             }
         }
@@ -289,6 +294,19 @@ main {
                 width: 130px;
                 // clip-path: circle(70px);
             }
+            .jane-image:hover, .norm-image:hover {
+                // animation: rotation 2s infinite linear;
+                // width: 200px;
+              }
+              
+              @keyframes rotation {
+                from {
+                  transform: rotate(0deg);
+                }
+                to {
+                  transform: rotate(359deg);
+                }
+              }
         }
         padding-bottom: 50px;
     }

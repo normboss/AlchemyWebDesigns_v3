@@ -85,7 +85,7 @@ and open the template in the editor.
             </div>
             <div class="box box5">
                 <div class="box box52">
-                    <img src="../images/jane.png" alt="Jane Herbert artist and web designer." <?php echo $altStyle ?>>
+                    <img class="jane-image" src="../images/jane.png" alt="Jane Herbert artist and web designer." <?php echo $altStyle ?>>
                 </div>
                 <div class="box box51">
                     <h2>Jane Herbert</h2>
@@ -99,7 +99,7 @@ and open the template in the editor.
                     <div class="spacer20"></div>
                 </div>
                 <div class="box box52">
-                    <img src="../images/Norm5a.jpg" alt="Norm Bosse web developer." <?php echo $altStyle ?>>
+                    <img class="norm-image" src="../images/Norm5a.jpg" alt="Norm Bosse web developer." <?php echo $altStyle ?>>
                 </div>
                 <div class="box box51">
                     <h2>Norm Bosse</h2>

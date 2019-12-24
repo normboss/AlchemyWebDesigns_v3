@@ -14,14 +14,14 @@
         @include max-mixin(400px) {
             font-size: 48px;
         }
-
-        animation: moveInLeft 2s ease-out;
-
+     
+        animation: moveInLeft 2s ease-in;
+        // transition: box-shadow 2s, transform 2s; /* CHANGED */
     }
     &__sub-title {
         // position: absolute;
         left: 50%;
-        top: 24%;
+        top: 35%;
         color: #93999a;
         font-weight: 450;
         @include min-mixin(1300px) {
@@ -34,7 +34,7 @@
         @include max-mixin(400px) {
             font-size: 28px;
         }
-        animation: moveInRight 2s ease-out;
+        animation: moveInRight 4s ease-in;
     }
 }
 
