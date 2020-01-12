@@ -210,6 +210,9 @@ main {
                         }
                     }
                     text-decoration: none;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
 
                 .box13,
@@ -227,6 +230,9 @@ main {
                         color: white;
                     }
                     text-decoration: none;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
 

@@ -9,6 +9,7 @@
             color: darkgray;
         }
         font-weight: 800;
+        font-weight: bold;
         font-size: 64px;
         word-spacing: 10px;
         @include max-mixin(400px) {

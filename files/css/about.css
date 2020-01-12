@@ -119,6 +119,7 @@ font-family: 'Open Sans', sans-serif;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
+  font-weight: bold;
   font-size: 64px;
   word-spacing: 10px;
   -webkit-animation: moveInLeft 2s ease-in;
@@ -319,6 +320,7 @@ font-family: 'Open Sans', sans-serif;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
+  font-weight: bold;
   font-size: 64px;
   word-spacing: 10px;
   -webkit-animation: moveInLeft 2s ease-in;
@@ -1042,7 +1044,8 @@ main .box5 .box51 {
   }
 }
 
-main .box5 .box51 #norm-email-input, main .box5 .box51 #jane-email-input {
+main .box5 .box51 #norm-email-input,
+main .box5 .box51 #jane-email-input {
   display: none;
 }
 
@@ -1063,6 +1066,8 @@ main .box5 .box52 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 main .box5 .box52 img {

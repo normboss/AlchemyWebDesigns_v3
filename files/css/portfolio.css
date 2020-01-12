@@ -120,6 +120,7 @@ font-family: 'Open Sans', sans-serif;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
+  font-weight: bold;
   font-size: 64px;
   word-spacing: 10px;
   -webkit-animation: moveInLeft 2s ease-in;
@@ -320,6 +321,7 @@ font-family: 'Open Sans', sans-serif;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
+  font-weight: bold;
   font-size: 64px;
   word-spacing: 10px;
   -webkit-animation: moveInLeft 2s ease-in;
@@ -962,6 +964,14 @@ main .portfolio .the-strip .box1 .box-even img {
   }
 }
 
+main .portfolio .the-strip .box1 .box12:hover,
+main .portfolio .the-strip .box1 .box14:hover,
+main .portfolio .the-strip .box1 .box16:hover,
+main .portfolio .the-strip .box1 .box18:hover,
+main .portfolio .the-strip .box1 .box-even:hover {
+  cursor: pointer;
+}
+
 main .portfolio .the-strip .box1 .box13,
 main .portfolio .the-strip .box1 .box15,
 main .portfolio .the-strip .box1 .box17,
@@ -979,6 +989,14 @@ main .portfolio .the-strip .box1 .box17 a,
 main .portfolio .the-strip .box1 .box19 a,
 main .portfolio .the-strip .box1 .box-odd a {
   color: white;
+}
+
+main .portfolio .the-strip .box1 .box13:hover,
+main .portfolio .the-strip .box1 .box15:hover,
+main .portfolio .the-strip .box1 .box17:hover,
+main .portfolio .the-strip .box1 .box19:hover,
+main .portfolio .the-strip .box1 .box-odd:hover {
+  cursor: pointer;
 }
 
 main .portfolio .the-strip .box2 {

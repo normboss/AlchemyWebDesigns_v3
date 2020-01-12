@@ -89,13 +89,11 @@ main {
     /*  font-family: 'Allura', cursive;
       font-family: 'Zeyada', cursive;*/
 
-      
     .about {
         position: relative;
         left: -8px;
         top: -8px;
         width: 110vw;
-
 
         background-image: url("../images/hero_about.png");
         // background-image: url("../images/fog_sherman_lake.png");
@@ -272,11 +270,11 @@ main {
                 padding-left: 5px;
                 padding-right: 5px;
             }
-            #norm-email-input, #jane-email-input {
+            #norm-email-input,
+            #jane-email-input {
                 display: none;
             }
             email-btn {
-
                 &:hover {
                     background: #ff9800;
                     color: white;
@@ -284,6 +282,7 @@ main {
                 }
             }
         }
+
         .box52 {
             display: flex;
             flex-direction: column;
@@ -294,19 +293,23 @@ main {
                 width: 130px;
                 // clip-path: circle(70px);
             }
-            .jane-image:hover, .norm-image:hover {
+            transition: all 0.2s;
+           
+            .jane-image:hover,
+            .norm-image:hover {
                 // animation: rotation 2s infinite linear;
                 // width: 200px;
-              }
-              
-              @keyframes rotation {
+                // transform: skewY(45deg) skewX(15deg) scale(1.2);
+            }
+
+            @keyframes rotation {
                 from {
-                  transform: rotate(0deg);
+                    transform: rotate(0deg);
                 }
                 to {
-                  transform: rotate(359deg);
+                    transform: rotate(359deg);
                 }
-              }
+            }
         }
         padding-bottom: 50px;
     }

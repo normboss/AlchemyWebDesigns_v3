@@ -42,34 +42,59 @@ and open the template in the editor.
             <div class="the-strip">
                 <div class="box box1">
                     <div class="box11">Our Work</div>
-                    <div class="box12 box13" onclick="wroughtIronLink() ">
-                        <img src="../images/AndySparks.png" 
-                        alt="Blacksmith Andy Leck working with sparks flying." <?php echo $altStyle ?> 
-                        title="Blacksmith Andy Leck working with sparks flying." 
-                        onclick="wroughtIronLink()">
-                        Scottish Lion Wrought Iron
-                    </div>
+                    <div class="box12">
+                        <!-- <a href="https://www.scottishwroughtiron.com" target="_blank">
+                            <img src="../images/AndySparks.png" alt="Blacksmith Andy Leck working with sparks flying." <?php //echo $altStyle 
+                                                                                                                        ?> title="Blacksmith Andy Leck working with sparks flying.">
 
-                    <div class="box14 box15" onclick="maineVillageWeaver()">
+                        </a> -->
+                        <img src="../images/AndySparks.png" alt="Blacksmith Andy Leck working with sparks flying." <?php echo $altStyle ?> title="Blacksmith Andy Leck working with sparks flying." onclick="wroughtIronLink()">
+                    </div>
+                    <div class="box13 box-odd">
+                        <a href="https://www.scottishwroughtiron.com" target="_blank">
+                            Scottish Lion Wrought Iron
+                        </a>
+                    </div>
+                    <div class="box14 box-even">
+                        <a href="https://www.mainevillageweaver.com" target="_blank">
                             <img src="../images/PhyllisWorking.png" alt="Weaver Phyllis Leck working at her loom." <?php echo $altStyle ?>>
-                        Maine Village Weaver
+                        </a>
                     </div>
-
-                    <div class="box16 box17" onclick="elementalShift()">
-                        <img src="../images/Kirsten.png" alt="Kirsten Jettinghoff mental health counselor." <?php echo $altStyle ?>>
-                        Elemental Shift
+                    <div class="box15 box-odd">
+                        <a href="https://www.mainevillageweaver.com" target="_blank">
+                            Maine Village Weaver
+                        </a>
                     </div>
-
-                    <div class="box18 box19" onclick="sliceOCountry()">
-                        <img src="../images/slicecountrypage.png" alt="Sarah Brewer and Slice O Country products." <?php echo $altStyle ?>>
-                        Slice O' Country
+                    <div class="box16 box-even">
+                        <a href="http://www.elementalshift.com" target="_blank">
+                            <img src="../images/Kirsten.png" alt="Kirsten Jettinghoff mental health counselor." <?php echo $altStyle ?>>
+                        </a>
                     </div>
-
-                    <div class="box-even box-odd" onclick="janeherbert()">
-                        <img src="../images/ubiquity_alchemy.png" alt="Sarah Brewer and Slice O Country products." <?php echo $altStyle ?>>
-                        Jane Herbert
+                    <div class="box17 box-odd">
+                        <a href="http://www.elementalshift.com" target="_blank">
+                            Elemental Shift
+                        </a>
                     </div>
-
+                    <div class="box18 box-even">
+                        <a href="http://www.sliceocountry.com" target="_blank">
+                            <img src="../images/slicecountrypage.png" alt="Sarah Brewer and Slice O Country products." <?php echo $altStyle ?>>
+                        </a>
+                    </div>
+                    <div class="box19 box-odd">
+                        <a href="http://www.sliceocountry.com" target="_blank">
+                            Slice O' Country
+                        </a>
+                    </div>
+                    <div class="box-even">
+                        <a href="http://www.janeherbert.com" target="_blank">
+                            <img src="../images/ubiquity_alchemy.png" alt="Sarah Brewer and Slice O Country products." <?php echo $altStyle ?>>
+                        </a>
+                    </div>
+                    <div class="box-odd">
+                        <a href="http://www.janeherbert.com" target="_blank">
+                            Jane Herbert
+                        </a>
+                    </div>
                     <div class="spacer20"></div>
                 </div>
 
@@ -112,19 +137,6 @@ and open the template in the editor.
     <script>
         function wroughtIronLink() {
             window.open('https://www.scottishwroughtiron.com', '_blank');
-        }
-        
-        function maineVillageWeaver() {
-            window.open('https://www.mainevillageweaver.com', '_blank');
-        }
-        function elementalShift() {
-            window.open('http://www.elementalshift.com', '_blank');
-        }
-        function sliceOCountry() {
-            window.open('https://www.sliceocountry.com', '_blank');
-        }
-        function janeherbert() {
-            window.open('https://www.janeherbert.com', '_blank');
         }
     </script>
 
