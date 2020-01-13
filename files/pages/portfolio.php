@@ -15,7 +15,7 @@ and open the template in the editor.
 <html>
 
 <head>
-    <title>Alchemy Web Design</title>
+    <title>Portfolio - Alchemy Web Design</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -51,22 +51,30 @@ and open the template in the editor.
                     </div>
 
                     <div class="box14 box15" onclick="maineVillageWeaver()">
-                            <img src="../images/PhyllisWorking.png" alt="Weaver Phyllis Leck working at her loom." <?php echo $altStyle ?>>
+                            <img src="../images/PhyllisWorking.png" 
+                            alt="Weaver Phyllis Leck working at her loom." <?php echo $altStyle ?>
+                            title="Weaver Phyllis Leck working at her loom.">
                         Maine Village Weaver
                     </div>
 
                     <div class="box16 box17" onclick="elementalShift()">
-                        <img src="../images/Kirsten.png" alt="Kirsten Jettinghoff mental health counselor." <?php echo $altStyle ?>>
+                        <img src="../images/Kirsten.png" 
+                        alt="Kirsten Jettinghoff mental health counselor" <?php echo $altStyle ?>
+                        title="Mental health counselor Kirsten Jettinghoff">
                         Elemental Shift
                     </div>
 
                     <div class="box18 box19" onclick="sliceOCountry()">
-                        <img src="../images/slicecountrypage.png" alt="Sarah Brewer and Slice O Country products." <?php echo $altStyle ?>>
+                        <img src="../images/slicecountrypage.png" 
+                        alt="Sarah Brewer and Slice O Country products." <?php echo $altStyle ?>
+                        title="Sarah Brewer and Slice O Country products.">
                         Slice O' Country
                     </div>
 
                     <div class="box-even box-odd" onclick="janeherbert()">
-                        <img src="../images/ubiquity_alchemy.png" alt="Sarah Brewer and Slice O Country products." <?php echo $altStyle ?>>
+                        <img src="../images/ubiquity_alchemy.png" 
+                        alt="Jane Herbert painting" <?php echo $altStyle ?>
+                        title="Jane Herbert paintings">
                         Jane Herbert
                     </div>
 
