@@ -30,6 +30,7 @@ and open the template in the editor.
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
 }
 
 .menu-icon > .line {
@@ -456,19 +457,16 @@ and open the template in the editor.
     Author     : Norm
 */
 .foot {
+  width: 100%;
   position: relative;
-  margin-left: 25px;
-  width: 110vw;
-  left: -8px;
+  max-width: 1400px;
   top: -8px;
   height: 80px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 50px;
   padding-bottom: 80px;
-  padding-right: 200px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: white;
@@ -538,7 +536,9 @@ and open the template in the editor.
     Author     : Norm
 */
 .header {
-  width: 100vw;
+  width: 95%;
+  max-width: 1175px;
+  margin-right: 25px;
   position: fixed;
   top: -1px;
   background-color: #d4cd96;

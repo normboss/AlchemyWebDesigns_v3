@@ -8,6 +8,16 @@ and open the template in the editor.
     Author     : Norm
 */
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400|Nothing+You+Could+Do|Open+Sans:400,600,700");
+@import url("https://use.typekit.net/cav8sep.css");
+@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps");
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oregano&display=swap");
+.header, .header .nav .nav__narrow, .header .nav .nav__wide ul, .header .header-index .nav-index .nav-index__wide ul, .header-index .nav-index .header .nav-index__wide ul {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(red));
+  background-image: linear-gradient(to right, red, red);
+}
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -17,11 +27,6 @@ and open the template in the editor.
     Created on : Jan 26, 2019, 10:44:21 PM
     Author     : Norm
 */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400|Nothing+You+Could+Do|Open+Sans:400,600,700");
-@import url("https://use.typekit.net/cav8sep.css");
-@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps");
-@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oregano&display=swap");
 .html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,6 +35,7 @@ and open the template in the editor.
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
 }
 
 .menu-icon > .line {
@@ -191,7 +197,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo {
-  background-color: #F6F8F9;
   color: black;
   height: 50px;
   padding-left: 25px;
@@ -392,7 +397,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo {
-  background-color: #F6F8F9;
   color: black;
   height: 50px;
   padding-left: 25px;
@@ -456,10 +460,9 @@ and open the template in the editor.
     Author     : Norm
 */
 .foot {
+  width: 100%;
   position: relative;
-  margin-left: 25px;
-  width: 110vw;
-  left: -8px;
+  max-width: 1400px;
   top: -8px;
   height: 80px;
   margin: 0 auto;
@@ -468,7 +471,6 @@ and open the template in the editor.
   display: flex;
   padding-top: 50px;
   padding-bottom: 80px;
-  padding-right: 200px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: white;
@@ -538,10 +540,14 @@ and open the template in the editor.
     Author     : Norm
 */
 .header {
-  width: 100vw;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   position: fixed;
   top: -1px;
-  background-color: #F6F8F9;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: -ms-grid;
   display: grid;
       grid-template-areas: "banner menu-wide";
@@ -587,7 +593,6 @@ and open the template in the editor.
 }
 
 .header .nav .nav__narrow {
-  background-color: #F6F8F9;
   position: relative;
   right: -5px;
   height: 50px;
@@ -626,7 +631,6 @@ and open the template in the editor.
   font-size: 16px;
   color: black;
   font-weight: bold;
-  background-color: #F6F8F9;
   height: 50px;
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 }
@@ -789,10 +793,13 @@ and open the template in the editor.
     Author     : Norm
 */
 .header-index {
+  max-width: 1400px;
   width: 100%;
+  margin: 0 auto;
   position: fixed;
   top: -1px;
   padding-right: 15px;
+  left: 75%;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "banner menu-wide";
@@ -878,15 +885,21 @@ and open the template in the editor.
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 }
 
-.header-index .header .nav .nav__wide ul li a, .header .nav .header-index .nav__wide ul li a, .header-index .nav-index .nav-index__wide ul li a, .header-index .header .nav .nav__wide ul .dropbtn, .header .nav .header-index .nav__wide ul .dropbtn, .header-index .nav-index .nav-index__wide ul .dropbtn {
+.header-index .header .nav .nav__wide ul li a, .header .nav .header-index .nav__wide ul li a, .header-index .nav-index .nav-index__wide ul li a,
+.header-index .header .nav .nav__wide ul .dropbtn,
+.header .nav .header-index .nav__wide ul .dropbtn,
+.header-index .nav-index .nav-index__wide ul .dropbtn {
   display: inline-block;
-  color: #0A0A09;
+  color: #0a0a09;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.header-index .header .nav .nav__wide ul li a:hover, .header .nav .header-index .nav__wide ul li a:hover, .header-index .nav-index .nav-index__wide ul li a:hover, .header-index .header .nav .nav__wide ul .dropdown:hover .dropbtn, .header .nav .header-index .nav__wide ul .dropdown:hover .dropbtn, .header-index .nav-index .nav-index__wide ul .dropdown:hover .dropbtn {
+.header-index .header .nav .nav__wide ul li a:hover, .header .nav .header-index .nav__wide ul li a:hover, .header-index .nav-index .nav-index__wide ul li a:hover,
+.header-index .header .nav .nav__wide ul .dropdown:hover .dropbtn,
+.header .nav .header-index .nav__wide ul .dropdown:hover .dropbtn,
+.header-index .nav-index .nav-index__wide ul .dropdown:hover .dropbtn {
   /*background-color: red;*/
   text-decoration: underline;
 }
@@ -906,7 +919,7 @@ and open the template in the editor.
 }
 
 .header-index .header .nav .nav__wide ul .dropdown-content a, .header .nav .header-index .nav__wide ul .dropdown-content a, .header-index .nav-index .nav-index__wide ul .dropdown-content a {
-  color: #0A0A09;
+  color: #0a0a09;
   /*padding: 12px 16px;*/
   padding-top: 12px;
   padding-bottom: 12px;
@@ -917,6 +930,7 @@ and open the template in the editor.
 
 .header-index .header .nav .nav__wide ul .dropdown-content a:hover, .header .nav .header-index .nav__wide ul .dropdown-content a:hover, .header-index .nav-index .nav-index__wide ul .dropdown-content a:hover {
   background-color: white;
+  /*text-decoration: underline;*/
 }
 
 .header-index .header .nav .nav__wide ul .dropdown:hover .dropdown-content, .header .nav .header-index .nav__wide ul .dropdown:hover .dropdown-content, .header-index .nav-index .nav-index__wide ul .dropdown:hover .dropdown-content {
@@ -937,7 +951,7 @@ and open the template in the editor.
   display: block;
   padding: 0;
   margin: 0;
-  color: #0A0A09;
+  color: #0a0a09;
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
@@ -951,16 +965,22 @@ and open the template in the editor.
   margin: 6px 0;
 }
 
-.header-index .header .nav .nav__narrow ul li a, .header .nav .header-index .nav__narrow ul li a, .header-index .nav-index .nav-index__narrow ul li a, .header-index .header .nav .nav__narrow ul .dropbtn, .header .nav .header-index .nav__narrow ul .dropbtn, .header-index .nav-index .nav-index__narrow ul .dropbtn {
+.header-index .header .nav .nav__narrow ul li a, .header .nav .header-index .nav__narrow ul li a, .header-index .nav-index .nav-index__narrow ul li a,
+.header-index .header .nav .nav__narrow ul .dropbtn,
+.header .nav .header-index .nav__narrow ul .dropbtn,
+.header-index .nav-index .nav-index__narrow ul .dropbtn {
   display: inline-block;
-  color: #0A0A09;
+  color: #0a0a09;
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
   text-decoration: none;
 }
 
-.header-index .header .nav .nav__narrow ul li a:hover, .header .nav .header-index .nav__narrow ul li a:hover, .header-index .nav-index .nav-index__narrow ul li a:hover, .header-index .header .nav .nav__narrow ul .dropdown:hover .dropbtn, .header .nav .header-index .nav__narrow ul .dropdown:hover .dropbtn, .header-index .nav-index .nav-index__narrow ul .dropdown:hover .dropbtn {
+.header-index .header .nav .nav__narrow ul li a:hover, .header .nav .header-index .nav__narrow ul li a:hover, .header-index .nav-index .nav-index__narrow ul li a:hover,
+.header-index .header .nav .nav__narrow ul .dropdown:hover .dropbtn,
+.header .nav .header-index .nav__narrow ul .dropdown:hover .dropbtn,
+.header-index .nav-index .nav-index__narrow ul .dropdown:hover .dropbtn {
   /*background-color: red;*/
   text-decoration: underline;
 }
@@ -981,7 +1001,7 @@ and open the template in the editor.
 }
 
 .header-index .header .nav .nav__narrow ul .dropdown-content a, .header .nav .header-index .nav__narrow ul .dropdown-content a, .header-index .nav-index .nav-index__narrow ul .dropdown-content a {
-  color: #0A0A09;
+  color: #0a0a09;
   /*padding: 12px 16px;*/
   padding-bottom: 12px;
   text-decoration: none;
@@ -1018,6 +1038,8 @@ and open the template in the editor.
 }
 
 main {
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   font-size: 28px;
@@ -1056,15 +1078,11 @@ main .images {
 }
 
 main .images .forrest {
-  left: -8px;
-  top: -8px;
-  width: 110vw;
-  margin-left: 0;
+  max-width: 1400px;
   height: 700px;
   background-image: url("../images/fog_sherman_lake.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr 1fr 1fr;

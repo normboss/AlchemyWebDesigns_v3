@@ -15,6 +15,9 @@ and open the template in the editor.
 <html>
 
 <head>
+    <?php
+    require '../includes/globalSiteTag.html';
+    ?>
     <title>About - Alchemy Web Design</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,6 +63,8 @@ and open the template in the editor.
 
         <div class="about">
             <div class="box box1">
+                <div class="spacer20"></div>
+                <div class="spacer20"></div>
                 <div class="heading">
                     What we do
                 </div>

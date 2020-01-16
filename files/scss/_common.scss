@@ -33,12 +33,16 @@ $font-acumin-wide:  acumin-pro-wide, sans-serif;
 $font-acumin:       acumin-pro, sans-serif;
 $font-marydale:     marydale, sans-serif;
 
+$max-page-width: 1400px;
+
 .html {
     box-sizing: border-box;
 
 }
+
 * {
     box-sizing: border-box;
+    margin: 0;
   }
 
 @mixin min-mixin($arg) {

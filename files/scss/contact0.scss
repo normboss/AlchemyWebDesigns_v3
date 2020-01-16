@@ -8,7 +8,14 @@ and open the template in the editor.
     Author     : Norm
 */
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
-$menu-background-color: #d4cd96;
+$menu-background-color: #E1C37D; //#C3B78E; // #C2B993; // #d4cd96;
+$menu-background-color1: #E5D087; // #F6F8F9;
+$menu-background-color2: #CBB87C; // #F6F8F9;
+%menu-background {
+    // background-image: linear-gradient(to right, $menu-background-color1, $menu-background-color2);
+    opacity: 1;
+}
+
 @import "common";
 
 .spacer30 {
@@ -57,6 +64,8 @@ $menu-background-color: #d4cd96;
 $font-size: 16px;
 
 main {
+    width: 100%;
+    max-width: $max-page-width;
     margin: 0 auto;
     text-align: center;
     font-size: 28px;
@@ -93,10 +102,10 @@ main {
         background-image: url("../images/hero_contact.png");
         width: 100%;
         position: relative;
-        left: -8px;
-        top: -8px;
-        width: 110vw;
-    height: auto; //90vh;
+        // left: -8px;
+        // top: -8px;
+        // width: 110vw;
+        height: auto; //90vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

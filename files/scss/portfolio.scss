@@ -12,6 +12,10 @@ and open the template in the editor.
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Italianno&display=swap');
 $menu-background-color: #e8eced;
+%menu-background {
+    background-image: linear-gradient(to right, #e8eced, #e8eced);
+}
+
 @import "common";
 
 
@@ -68,10 +72,11 @@ main {
     font-size: 28px;
     /*word-spacing: -5px;*/
     /*letter-spacing: 20px;*/
-    position: relative;
+    // position: relative;
     left: -8px;
     // top: -8px;
-    width: 110vw;
+    width: 100%;
+    max-width: $max-page-width;
 
     .php-output {
         color: red;
@@ -100,12 +105,11 @@ main {
 
     .portfolio {
         position: relative;
-        left: -8px;
-        top: -8px;
-        width: 110vw;
+        // left: -8px;
+        // top: -8px;
 
         background-image: url("../images/hero_folio1.png");
-        // width: 100%;
+        width: 100%;
         height: auto;
         background-size: cover;
         background-repeat: no-repeat;
@@ -114,7 +118,7 @@ main {
         background-position-x: left;
         background-position-y: bottom;
         .the-strip {
-            width: 100%;
+            // width: 100%;
             display: flex;
             padding-top: 200px;
             padding-left: 20%;

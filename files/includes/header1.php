@@ -36,7 +36,7 @@
             </div>
         </div>
     </header>
-    <?php
-        if ( $_SESSION['pagename'] != "index" )
-            require 'header-logo.php';
-        ?>
+    <!-- <?php
+        // if ( $_SESSION['pagename'] != "index" )
+        //     require 'header-logo.php';
+        ?> -->

@@ -8,6 +8,15 @@ and open the template in the editor.
     Author     : Norm
 */
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400|Nothing+You+Could+Do|Open+Sans:400,600,700");
+@import url("https://use.typekit.net/cav8sep.css");
+@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps");
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oregano&display=swap");
+.header, .header .nav .nav__narrow, .header .nav .nav__wide ul {
+  opacity: 1;
+}
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -17,11 +26,6 @@ and open the template in the editor.
     Created on : Jan 26, 2019, 10:44:21 PM
     Author     : Norm
 */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400|Nothing+You+Could+Do|Open+Sans:400,600,700");
-@import url("https://use.typekit.net/cav8sep.css");
-@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps");
-@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oregano&display=swap");
 .html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,6 +34,7 @@ and open the template in the editor.
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
 }
 
 .menu-icon > .line {
@@ -191,7 +196,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo {
-  background-color: #d4cd96;
   color: black;
   height: 50px;
   padding-left: 25px;
@@ -392,7 +396,6 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo {
-  background-color: #d4cd96;
   color: black;
   height: 50px;
   padding-left: 25px;
@@ -456,10 +459,9 @@ and open the template in the editor.
     Author     : Norm
 */
 .foot {
+  width: 100%;
   position: relative;
-  margin-left: 25px;
-  width: 110vw;
-  left: -8px;
+  max-width: 1400px;
   top: -8px;
   height: 80px;
   margin: 0 auto;
@@ -468,7 +470,6 @@ and open the template in the editor.
   display: flex;
   padding-top: 50px;
   padding-bottom: 80px;
-  padding-right: 200px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: white;
@@ -538,10 +539,14 @@ and open the template in the editor.
     Author     : Norm
 */
 .header {
-  width: 100vw;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   position: fixed;
   top: -1px;
-  background-color: #d4cd96;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: -ms-grid;
   display: grid;
       grid-template-areas: "banner menu-wide";
@@ -587,7 +592,6 @@ and open the template in the editor.
 }
 
 .header .nav .nav__narrow {
-  background-color: #d4cd96;
   position: relative;
   right: -5px;
   height: 50px;
@@ -626,7 +630,6 @@ and open the template in the editor.
   font-size: 16px;
   color: black;
   font-weight: bold;
-  background-color: #d4cd96;
   height: 50px;
   /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 }
@@ -797,6 +800,8 @@ and open the template in the editor.
 }
 
 main {
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
   font-size: 28px;
@@ -834,9 +839,6 @@ main .contact-container {
   background-image: url("../images/hero_contact.png");
   width: 100%;
   position: relative;
-  left: -8px;
-  top: -8px;
-  width: 110vw;
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;

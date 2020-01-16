@@ -9,7 +9,11 @@ and open the template in the editor.
 */
 
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
-$menu-background-color: #dce6e8;
+$menu-background-color: #D2DDE3; //#dce6e8;
+%menu-background {
+    background-image: linear-gradient(to right, #D2DDE3, #D2DDE3);
+}
+
 @import "common";
 
 .spacer30 {
@@ -57,8 +61,13 @@ $menu-background-color: #dce6e8;
 }
 $font-size: 16px;
 
+
 main {
+
     margin: 0 auto;
+    // padding-top: 35px;
+    width: 100%;
+    max-width: $max-page-width;
     text-align: center;
     font-size: 28px;
     /*word-spacing: -5px;*/
@@ -91,9 +100,8 @@ main {
 
     .about {
         position: relative;
-        left: -8px;
-        top: -8px;
-        width: 110vw;
+        // left: -8px;
+        // top: -8px;
 
         background-image: url("../images/hero_about.png");
         // background-image: url("../images/fog_sherman_lake.png");
@@ -102,7 +110,6 @@ main {
         // background-image: url("../images/Bass-Harbor-Head-light-fog.jpg");
 
         // width: 100%;
-        // height: 90vh;
         // height: 2000px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -228,7 +235,8 @@ main {
     }
     .box5 {
         // border: 3px solid red;
-        grid-column: 1 / span 3;
+        
+        grid-column: 1 / span 4;
         grid-row: 5 / span 1;
         // @include max-mixin(1000px) {
         //     grid-column: 2 / span 1;
@@ -287,6 +295,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-left: 25px;
             // width: 100px;
             // height: auto;
             img {

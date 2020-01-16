@@ -10,19 +10,24 @@ and open the template in the editor.
 
 .foot {
     // border: 3px solid red;
+    width: 100%;
     position: relative;
+    // margin-right: 25px;
     // bottom: -700px;
-    margin-left: 25px;
+    // margin-left: 25px;
     // background-color: #9da5b2;
-    width: 110vw;
-    left: -8px;
+    // width: 110vw;
+    max-width: $max-page-width;
+    // left: -8px;
     top: -8px;
+    // left: -8px;
     height: 80px;
     margin: 0 auto;
+    // margin-right: 25px;
     display: flex;
     padding-top: 50px;
     padding-bottom: 80px;
-    padding-right: 200px;
+    // padding-right: 200px;
 
     @include max-mixin(1050px) {
         padding-right: 100px;
