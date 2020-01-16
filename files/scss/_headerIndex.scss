@@ -20,12 +20,13 @@ $text-color: red;
     * {
         box-sizing: border-box;
     }
-
+    // border: 3px solid red;
     max-width: $max-page-width;
     width: 100%;
     margin: 0 auto;
     position: fixed;
     top: -1px;
+    left: 50%;
     padding-right: 15px;
     // left: -10px;
     display: grid;
@@ -42,6 +43,7 @@ $text-color: red;
     .nav-index {
         .nav-index__wide {
             // border: 3px solid red;
+            left: 50%;
             grid-area: menu-wide;
             @extend %menu-style-wide;
             @include max-mixin($breakPoint1) {

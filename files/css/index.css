@@ -798,6 +798,7 @@ and open the template in the editor.
   margin: 0 auto;
   position: fixed;
   top: -1px;
+  left: 50%;
   padding-right: 15px;
   display: -ms-grid;
   display: grid;
@@ -826,6 +827,7 @@ and open the template in the editor.
 }
 
 .header-index .nav-index .nav-index__wide {
+  left: 50%;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: menu-wide;
