@@ -799,7 +799,6 @@ and open the template in the editor.
   position: fixed;
   top: -1px;
   padding-right: 15px;
-  left: 75%;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "banner menu-wide";
@@ -846,6 +845,7 @@ and open the template in the editor.
 .header-index .nav-index .nav-index__narrow {
   background-color: rgba(246, 248, 249, 0);
   height: 50px;
+  left: 75%;
   grid-area: menu-narrow;
   display: none;
 }
