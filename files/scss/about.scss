@@ -123,7 +123,7 @@ main {
         // grid-row-gap: 5%;
 
         .box {
-            // border: 3px solid green;
+            border: 3px solid green;
             width: 66%;
             @include max-mixin(1000px) {
                 width: 80%;

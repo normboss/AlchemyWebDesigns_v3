@@ -55,17 +55,19 @@ $text-color: red;
             }
         }
         .nav-index__narrow {
-            // border: 3px solid red;
+            border: 3px solid red;
             background-color: rgba(246, 248, 249, 0); //$menu-background-color;
             height: 50px;
+            width: 70px;
             // width: 100%;
-            left: 75%;
+            // left: 75%;
             grid-area: menu-narrow;
             display: none;
             @extend %menu-style-narrow;
             @include max-mixin($breakPoint1) {
                 display: flex;
             }
+            padding-left: 25vw;
         }
     }
 

@@ -8,10 +8,10 @@
         <div class="nav">
             <div class="nav__wide">
                 <ul>
-                    <span class="menu-item"><a href="<?php echo $_SESSION['root'] . '/index.php' ?>">Home</a></span>
-                    <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/portfolio.php' ?>>Portfolio</a></span>
-                    <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/about.php' ?>>About</a></span>
-                    <span class="menu-item"><a href=<?php echo $_SESSION['root'] . '/files/pages/contact0.php' ?>  target="_blank">Contact</a></span>
+                    <span class="menu-item"><a href="home.php">Home</a></span>
+                    <span class="menu-item"><a href="portfolio.php">Portfolio</a></span>
+                    <span class="menu-item"><a href="about.php">About</a></span>
+                    <span class="menu-item"><a href="contact0.php" target="_blank">Contact</a></span>
                 </ul>
             </div>
 
@@ -24,10 +24,10 @@
                             <div class="hamburger"></div>
                         </a>
                         <div class="dropdown-content">
-                            <a href="<?php echo $_SESSION['root'] . '/index.php' ?>">Home</a>
-                            <a href=<?php echo $_SESSION['root'] . '/files/pages/portfolio.php' ?>>Portfolio</a>
-                            <a href=<?php echo $_SESSION['root'] . '/files/pages/about.php' ?>>About</a>
-                            <a href=<?php echo $_SESSION['root'] . '/files/pages/contact0.php' ?>  target="_blank">Contact</a>
+                            <a href="home.php">Home</a>
+                            <a href="portfolio.php">Portfolio</a>
+                            <a href="about.php">About</a>
+                            <a href="contact0.php" target="_blank">Contact</a>
 
                         </div>
                     </li>
@@ -36,7 +36,3 @@
             </div>
         </div>
     </header>
-    <!-- <?php
-        // if ( $_SESSION['pagename'] != "index" )
-        //     require 'header-logo.php';
-        ?> -->

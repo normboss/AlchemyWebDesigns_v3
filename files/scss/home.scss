@@ -8,7 +8,6 @@ and open the template in the editor.
     Author     : Norm
 */
 
-
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 $menu-background-color: #F6F8F9;
 $menu-background-color1: red; // #F6F8F9;
@@ -130,6 +129,7 @@ main {
             // justify-items: center;
             // grid-row-gap: 5%;
 
+            
             .box {
                 // border: 3px solid red;
                 width: 66%;
@@ -145,6 +145,7 @@ main {
 
             // }
             .box1 {
+                // border: 3px solid red;
                 grid-column: 1 / span 3;
                 grid-row: 1 / span 1;
                 font-family: Arial, Helvetica, sans-serif;

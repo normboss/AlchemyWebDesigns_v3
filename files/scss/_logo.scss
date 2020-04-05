@@ -1,5 +1,5 @@
-
 .logo {
+    // border: 3px solid blue;
     &__title {
         // position: absolute;
         left: 25%;
@@ -15,7 +15,7 @@
         @include max-mixin(400px) {
             font-size: 48px;
         }
-     
+
         animation: moveInLeft 2s ease-in;
         // transition: box-shadow 2s, transform 2s; /* CHANGED */
     }
@@ -44,7 +44,7 @@
     position: relative;
     top: -15px;
     height: 50px;
-    background-color: #9DA5B2;
+    background-color: #9da5b2;
     color: white;
     &__title {
         font-family: "Major Mono Display", monospace;
@@ -76,6 +76,7 @@
     position: relative;
     left: -8px;
     margin-right: 0;
+
     @include max-mixin(750px) {
         padding-left: 10px;
         padding-top: 10px;

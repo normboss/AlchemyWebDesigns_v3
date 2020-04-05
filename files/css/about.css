@@ -173,7 +173,7 @@ font-family: 'Open Sans', sans-serif;
   position: relative;
   top: -15px;
   height: 50px;
-  background-color: #9DA5B2;
+  background-color: #9da5b2;
   color: white;
 }
 
@@ -373,7 +373,7 @@ font-family: 'Open Sans', sans-serif;
   position: relative;
   top: -15px;
   height: 50px;
-  background-color: #9DA5B2;
+  background-color: #9da5b2;
   color: white;
 }
 
@@ -851,6 +851,7 @@ main .about {
 }
 
 main .about .box {
+  border: 3px solid green;
   width: 66%;
   height: auto;
   color: 93999a;
