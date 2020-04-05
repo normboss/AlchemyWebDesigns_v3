@@ -109,8 +109,6 @@ main {
         // background-image: url("../images/Background.png");
         // background-image: url("../images/Bass-Harbor-Head-light-fog.jpg");
 
-        // width: 100%;
-        // height: 2000px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -123,7 +121,7 @@ main {
         // grid-row-gap: 5%;
 
         .box {
-            border: 3px solid green;
+            // border: 3px solid green;
             width: 66%;
             @include max-mixin(1000px) {
                 width: 80%;

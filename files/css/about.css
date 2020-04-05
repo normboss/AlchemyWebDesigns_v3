@@ -851,7 +851,6 @@ main .about {
 }
 
 main .about .box {
-  border: 3px solid green;
   width: 66%;
   height: auto;
   color: 93999a;
