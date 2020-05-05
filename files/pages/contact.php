@@ -15,14 +15,11 @@ and open the template in the editor.
 <html>
 
 <head>
-    <?php
-    require '../includes/globalSiteTag.html';
-    require '../includes/keywords.php';
-    ?>
+    <title>Alchemy Web Design</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/contact0.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/contact.css" media="screen" rel="stylesheet" type="text/css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <!--<link href=".files/fonts/Wizards Magic.ttf" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
@@ -41,22 +38,20 @@ and open the template in the editor.
     <main>
 
         <div class="contact-container">
-            <div class="box box1">
-                <br><br>
-                <?php
-                //  require '../includes/logo.php'; 
-                ?>
+            <br>
+            <div class="magic-block">
                 <?php
                 require '../includes/magic.php';
                 ?>
             </div>
-
-            <div class="box box3">
-            </div>
-            <div class="box form-container">
-                <!-- <div> -->
-                    We enjoy meeting and working with people who love what they do. Connect with us and together We will create an on line presence that effectively represents your vision.
-                <!-- </div> -->
+            <div class="spacer20"></div>
+            <div class="form-container">
+                <div>
+                    We enjoy meeting and working with people who love what they do. 
+                    <br>
+                    <div class="spacer10"></div>
+                    Connect with us and together We will create an on line presence that effectively represents your vision.
+                </div>
                 <form method="post" class="contactform" action="https://www1.domain.com/scripts/formemail.bml" name="contactform">
                     <input type="hidden" name="my_email" value="norm.bosse0@gmail.com">
                     <label for="email">Your Email Address</label>
@@ -66,7 +61,7 @@ and open the template in the editor.
                     <label for="message">Message</label>
                     <textarea cols="40" maxlength="1000" name="message" rows="5"></textarea>
                     <input type="hidden" name="required" value="email,message">
-                    <input type="hidden" name="thankyou_url" value="https://www.alchemywebdesigns.com/files/pages/html/thankyou.html">
+                    <input type="hidden" name="thankyou_url" value="https://www.alchemywebdesigns.com/files/pages/thankyou.php">
                     <label for="submit"></label>
                     <input type="submit" name="submit" value="Send">
                 </form>

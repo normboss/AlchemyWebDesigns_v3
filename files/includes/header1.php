@@ -11,7 +11,7 @@
                     <span class="menu-item"><a href="home.php">Home</a></span>
                     <span class="menu-item"><a href="portfolio.php">Portfolio</a></span>
                     <span class="menu-item"><a href="about.php">About</a></span>
-                    <span class="menu-item"><a href="contact0.php" target="_blank">Contact</a></span>
+                    <span class="menu-item"><a href="contact.php" target="_blank">Contact</a></span>
                 </ul>
             </div>
 
@@ -27,7 +27,7 @@
                             <a href="home.php">Home</a>
                             <a href="portfolio.php">Portfolio</a>
                             <a href="about.php">About</a>
-                            <a href="contact0.php" target="_blank">Contact</a>
+                            <a href="contact.php" target="_blank">Contact</a>
 
                         </div>
                     </li>
