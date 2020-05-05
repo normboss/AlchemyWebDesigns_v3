@@ -12,10 +12,30 @@
 
         </footer>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+        <!-- add your own script -->
+        <script>
+            var text = document.getElementsByClassName("logo");
+
+            gsap.to(text[0], {
+                // rotation: 360,
+                duration: 5,
+                // x: 0,
+                // y: 500,
+                // delay: 1,
+                opacity: "1",
+                // scale: "1.5"
+            });
+
+        </script>
+
+
         <script>
             var foot = document.getElementById("footer");
             var logo = document.getElementById("small-logo-id");
-            // var pagename = <?php //echo '"' . $_SESSION['pagename'] . '"'; ?>;
+            // var pagename = <?php //echo '"' . $_SESSION['pagename'] . '"'; 
+                                ?>;
 
             var pagename = "<?php echo $_SESSION['pagename'] ?>";
             if (pagename == 'contact') {

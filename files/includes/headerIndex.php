@@ -3,7 +3,7 @@
         <div class="nav-index">
             <div class="nav-index__wide">
                 <ul>
-                    <span class="menu-item"><a href="home.ph">Home</a></span>
+                    <span class="menu-item"><a href="home.php">Home</a></span>
                     <span class="menu-item"><a href="portfolio.php">Portfolio</a></span>
                     <span class="menu-item"><a href="about.php">About</a></span>
                     <span class="menu-item"><a href="contact0.php" target="_blank">Contact</a></span>

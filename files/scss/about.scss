@@ -9,9 +9,10 @@ and open the template in the editor.
 */
 
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
-$menu-background-color: #D2DDE3; //#dce6e8;
+$menu-background-color: #d2dde3; //#dce6e8;
+
 %menu-background {
-    background-image: linear-gradient(to right, #D2DDE3, #D2DDE3);
+    background-image: linear-gradient(to right, #d2dde3, #d2dde3);
 }
 
 @import "common";
@@ -61,9 +62,7 @@ $menu-background-color: #D2DDE3; //#dce6e8;
 }
 $font-size: 16px;
 
-
 main {
-
     margin: 0 auto;
     // padding-top: 35px;
     width: 100%;
@@ -233,7 +232,7 @@ main {
     }
     .box5 {
         // border: 3px solid red;
-        
+
         grid-column: 1 / span 4;
         grid-row: 5 / span 1;
         // @include max-mixin(1000px) {
@@ -290,33 +289,56 @@ main {
         }
 
         .box52 {
-            display: flex;
+            // border: 3px solid red;
+            // display: flex;
             flex-direction: column;
             justify-content: center;
             margin-left: 25px;
             // width: 100px;
             // height: auto;
+            width: 200px;
+            padding-top: 10px;
+
             img {
-                width: 130px;
-                // clip-path: circle(70px);
+                // width: 200px;
+                // clip-path: circle(90px);
+                transform: rotate(-15deg);
+                transform-origin: 0% 100%;
+                // transition: 2s;
+                transition: all .3s;
+                // box-shadow: 10px 10px 5px grey;
             }
-            transition: all 0.2s;
-           
+
+            //     transform: rotate(-20deg);
+            //     transform-origin: 0% 100%;
+            //   }
+
+            //   #div2:hover {
+            //     transform: rotate(0deg);
+            //     transform-origin: 0% 100%;
+
+            .norm-image {
+                border-radius: 15px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
             .jane-image:hover,
             .norm-image:hover {
                 // animation: rotation 2s infinite linear;
                 // width: 200px;
                 // transform: skewY(45deg) skewX(15deg) scale(1.2);
+                transform: rotate(0deg);
+                transform-origin: 0% 100%;
             }
 
-            @keyframes rotation {
-                from {
-                    transform: rotate(0deg);
-                }
-                to {
-                    transform: rotate(359deg);
-                }
-            }
+            // @keyframes rotation {
+            //     from {
+            //         transform: rotate(0deg);
+            //     }
+            //     to {
+            //         transform: rotate(359deg);
+            //     }
+            // }
         }
         padding-bottom: 50px;
     }

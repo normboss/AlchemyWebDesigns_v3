@@ -17,13 +17,13 @@ and open the template in the editor.
 <head>
     <?php
     require '../includes/globalSiteTag.html';
+    require 'files/includes/keywords.php';
     ?>
-    <title>About - Alchemy Web Design</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/about.css" media="screen" rel="stylesheet" type="text/css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script> -->
     <!--<link href=".files/fonts/Wizards Magic.ttf" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
@@ -104,7 +104,8 @@ and open the template in the editor.
                     <div class="spacer20"></div>
                 </div>
                 <div class="box box52">
-                    <img class="norm-image" src="../images/Norm5a.jpg" alt="Norm Bosse web developer." <?php echo $altStyle ?>>
+                    <!-- <img class="norm-image" src="../images/Norm5a.jpg" alt="Norm Bosse web developer." <?php echo $altStyle ?>> -->
+                    <img class="norm-image" src="../images/WiringTrailerCloseup1.jpg" style="width: 125px;" alt="Norm Bosse web developer." <?php echo $altStyle ?>>
                 </div>
                 <div class="box box51">
                     <h2>Norm Bosse</h2>

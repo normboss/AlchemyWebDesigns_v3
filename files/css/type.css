@@ -12,12 +12,11 @@ main {
   margin: 0 auto;
   border: 2px solid black;
   background-color: lightblue;
-  display: -ms-grid;
   display: grid;
   /*  grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat( 4, 1fr );
   grid-auto-rows: auto;*/
-      grid-template-areas: "header header" "payment shipping" "special shipping" "image image";
+  grid-template-areas: "header header" "payment shipping" "special shipping" "image image";
   gridi-gap: 10px;
   text-align: center;
   padding: 20px 0;
@@ -52,9 +51,6 @@ main .header {
   /*border: 2px solid black;*/
   background-color: white;
   /*grid-area: 1 / 1 / 2 / span 2;*/
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: header;
   justify-items: center;
 }
@@ -65,9 +61,7 @@ main .header .parent {
   justify-items: center;
   /*position: absolute;*/
   font-size: 36px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 main .header .parent .child {
@@ -83,7 +77,6 @@ main .header .parent .child {
   /*height: 5px;*/
   /*        background-color: red;  For browsers that do not support gradients 
         background-image: linear-gradient(to right, red , yellow);  Standard syntax (must be last) */
-  background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(33%, yellowgreen), color-stop(66%, yellow), to(gold));
   background-image: linear-gradient(to right, green, yellowgreen 33%, yellow 66%, gold);
   color: transparent;
   -webkit-background-clip: text;
@@ -93,34 +86,24 @@ main .header .parent .child {
 main .payment {
   background-color: lightgreen;
   /*grid-area: 2 / 1 / 2 / 1;*/
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: payment;
 }
 
 main .special {
   background-color: lightgrey;
   /*grid-area: 3 / 1 / 3 / 2;*/
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: special;
 }
 
 main .shipping {
   background-color: lightyellow;
   /*grid-area: 2 / 2 / span 2 / span 1;*/
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
   grid-area: shipping;
 }
 
 main .image {
   background-color: lightslategray;
   /*grid-area: 4 / 1 / 4 / span 2;*/
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: image;
 }
 /*# sourceMappingURL=type.css.map */

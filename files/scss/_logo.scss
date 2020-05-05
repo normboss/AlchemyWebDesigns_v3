@@ -1,5 +1,9 @@
+
 .logo {
     // border: 3px solid blue;
+    opacity: 1;
+    font-weight: bold;;
+
     &__title {
         // position: absolute;
         left: 25%;
@@ -10,15 +14,16 @@
         }
         font-weight: 800;
         font-weight: bold;
-        font-size: 64px;
+        font-size: 80px; // 64px;
         word-spacing: 10px;
         @include max-mixin(400px) {
             font-size: 48px;
         }
 
-        animation: moveInLeft 2s ease-in;
+        // animation: moveInLeft 2s ease-in;
         // transition: box-shadow 2s, transform 2s; /* CHANGED */
     }
+    
     &__sub-title {
         // position: absolute;
         left: 50%;
@@ -30,13 +35,16 @@
             font-weight: 800;
         }
         font-family: $font-nothing;
-        font-size: 36px;
+        font-size: 48px; //36px;
         letter-spacing: 6px;
         @include max-mixin(400px) {
             font-size: 28px;
         }
-        animation: moveInRight 4s ease-in;
+        // animation: moveInRight 4s ease-in;
     }
+    // text-shadow: 5px 5px 5px #93999a;
+    // text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    // text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .small-logo {

@@ -14,8 +14,7 @@ and open the template in the editor.
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Oregano&display=swap");
 .header, .header .nav .nav__narrow, .header .nav .nav__wide ul {
-  background-image: -webkit-gradient(linear, left top, right top, from(#D2DDE3), to(#D2DDE3));
-  background-image: linear-gradient(to right, #D2DDE3, #D2DDE3);
+  background-image: linear-gradient(to right, #d2dde3, #d2dde3);
 }
 
 /*
@@ -28,13 +27,11 @@ and open the template in the editor.
     Author     : Norm
 */
 .html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -120,16 +117,19 @@ and open the template in the editor.
 font-family: 'Major Mono Display', monospace;
 font-family: 'Open Sans', sans-serif;
 */
+.logo {
+  opacity: 1;
+  font-weight: bold;
+}
+
 .logo__title {
   left: 25%;
   font-family: "Major Mono Display", monospace;
   color: #93999a;
   font-weight: 800;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 80px;
   word-spacing: 10px;
-  -webkit-animation: moveInLeft 2s ease-in;
-          animation: moveInLeft 2s ease-in;
 }
 
 @media screen and (min-width: 1300px) {
@@ -150,10 +150,8 @@ font-family: 'Open Sans', sans-serif;
   color: #93999a;
   font-weight: 450;
   font-family: "Nothing You Could Do", cursive;
-  font-size: 36px;
+  font-size: 48px;
   letter-spacing: 6px;
-  -webkit-animation: moveInRight 4s ease-in;
-          animation: moveInRight 4s ease-in;
 }
 
 @media screen and (min-width: 1300px) {
@@ -250,29 +248,7 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@-webkit-keyframes moveInLeft {
-  0% {
-    opacity: 0;
-  }
-  80% {
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes moveInLeft {
-  0% {
-    opacity: 0;
-  }
-  80% {
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes moveInRight {
   0% {
     opacity: 0;
   }
@@ -294,30 +270,20 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@-webkit-keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
+    transform: translateY(3rem);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
+}
+
+.logo {
+  opacity: 1;
+  font-weight: bold;
 }
 
 .logo__title {
@@ -326,10 +292,8 @@ font-family: 'Open Sans', sans-serif;
   color: #93999a;
   font-weight: 800;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 80px;
   word-spacing: 10px;
-  -webkit-animation: moveInLeft 2s ease-in;
-          animation: moveInLeft 2s ease-in;
 }
 
 @media screen and (min-width: 1300px) {
@@ -350,10 +314,8 @@ font-family: 'Open Sans', sans-serif;
   color: #93999a;
   font-weight: 450;
   font-family: "Nothing You Could Do", cursive;
-  font-size: 36px;
+  font-size: 48px;
   letter-spacing: 6px;
-  -webkit-animation: moveInRight 4s ease-in;
-          animation: moveInRight 4s ease-in;
 }
 
 @media screen and (min-width: 1300px) {
@@ -466,13 +428,10 @@ and open the template in the editor.
   top: -8px;
   height: 80px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-top: 50px;
   padding-bottom: 80px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   color: white;
 }
 
@@ -484,14 +443,9 @@ and open the template in the editor.
 
 @media screen and (max-width: 900px) {
   .foot {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0 auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     height: 180px;
     padding-bottom: 50px;
     padding-right: 50px;
@@ -500,12 +454,8 @@ and open the template in the editor.
 
 @media screen and (max-width: 450px) {
   .foot {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: flex-start;
+    align-items: center;
     padding-left: 0;
     margin-left: 0;
   }
@@ -546,38 +496,28 @@ and open the template in the editor.
   position: fixed;
   top: -1px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -ms-grid;
+  transform: translateX(-50%);
   display: grid;
-      grid-template-areas: "banner menu-wide";
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 50px;
-      grid-template-rows: 50px;
+  grid-template-areas: "banner menu-wide";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px;
   z-index: 10;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 700px) {
   .header {
-        grid-template-areas: "banner menu-narrow ";
-    -ms-grid-columns: 3fr 1fr;
-        grid-template-columns: 3fr 1fr;
+    grid-template-areas: "banner menu-narrow ";
+    grid-template-columns: 3fr 1fr;
   }
 }
 
 .header .nav .nav__wide {
   position: relative;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: menu-wide;
 }
 
@@ -602,8 +542,6 @@ and open the template in the editor.
 
 @media screen and (max-width: 700px) {
   .header .nav .nav__narrow {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -614,13 +552,9 @@ and open the template in the editor.
 
 .header .nav .nav__wide ul {
   top: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: space-around;
+  align-content: center;
   list-style-type: none;
   padding: 0;
   padding-top: 17px;
@@ -657,8 +591,7 @@ and open the template in the editor.
   position: absolute;
   background-color: #f9f9f9;
   /*min-width: 160px;*/
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 5;
 }
 
@@ -683,10 +616,7 @@ and open the template in the editor.
 .header .nav .nav__narrow {
   z-index: 10;
   padding-top: 5px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .header .nav .nav__narrow ul {
@@ -732,8 +662,7 @@ and open the template in the editor.
   position: absolute;
   background-color: #f9f9f9;
   /*min-width: 160px;*/
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 10;
   font-size: 16px;
 }
@@ -767,20 +696,16 @@ and open the template in the editor.
 
 .magic .magic__put {
   font-family: 'Oregano', cursive;
-  -webkit-animation: moveInBottom .5s ease-out .75s;
-          animation: moveInBottom .5s ease-out .75s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
 }
 
 .magic a.magic__contact {
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
-  -webkit-animation: moveInBottom .5s ease-out 1.5s;
-          animation: moveInBottom .5s ease-out 1.5s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation: moveInBottom .5s ease-out 1.5s;
+  animation-fill-mode: backwards;
 }
 
 .spacer30 {
@@ -842,12 +767,9 @@ main .about {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr 1fr 1fr;
-      grid-template-columns: 1fr 3fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 main .about .box {
@@ -864,20 +786,12 @@ main .about .box {
 
 main .about .box1 {
   margin-top: 50px;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
   grid-column: 2 / span 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
   grid-row: 1 / span 3;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  align-self: center;
+  align-self: start;
   text-align: left;
   line-height: 28px;
   width: 50%;
@@ -888,8 +802,6 @@ main .about .box1 {
 
 @media screen and (max-width: 600px) {
   main .about .box1 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-column: 1 / span 3;
     padding-left: 15px;
     padding-right: 15px;
@@ -919,29 +831,19 @@ main .about .box1 .text {
 }
 
 main .about .box2 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
   grid-row: 2 / span 1;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  align-self: flex-start;
+  justify-self: center;
   text-align: center;
   color: #93999a;
   width: 80%;
 }
 
 main .about .box3 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2 / span 1;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
   grid-row: 3 / span 1;
   width: 100%;
   height: 100px;
@@ -950,29 +852,17 @@ main .about .box3 {
   font-weight: normal;
   justify-self: flex-start;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: start;
-      align-self: start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  align-self: start;
+  justify-content: flex-start;
   margin-top: 50px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
   main .about .box3 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-column: 1 / span 3;
     padding-left: 15px;
     padding-right: 15px;
@@ -980,11 +870,7 @@ main .about .box3 {
 }
 
 main .box4 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
   grid-row: 4 / span 1;
   width: 100%;
   height: 50px;
@@ -996,21 +882,13 @@ main .box4 {
 }
 
 main .box5 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-column: 1 / span 4;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
   grid-row: 5 / span 1;
   width: 100%;
   height: 250px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   padding-bottom: 50px;
 }
 
@@ -1022,10 +900,7 @@ main .box5 {
 
 @media screen and (max-width: 800px) {
   main .box5 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0 auto;
   }
 }
@@ -1059,44 +934,27 @@ main .box5 .box51 email-btn:hover {
 }
 
 main .box5 .box52 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 25px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  width: 200px;
+  padding-top: 10px;
 }
 
 main .box5 .box52 img {
-  width: 130px;
+  transform: rotate(-15deg);
+  transform-origin: 0% 100%;
+  transition: all .3s;
 }
 
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
+main .box5 .box52 .norm-image {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
+main .box5 .box52 .jane-image:hover,
+main .box5 .box52 .norm-image:hover {
+  transform: rotate(0deg);
+  transform-origin: 0% 100%;
 }
 /*# sourceMappingURL=about.css.map */

@@ -8,15 +8,15 @@ and open the template in the editor.
     Author     : Norm
 */
 
-
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Italianno&display=swap');
+
+@import "common";
+
 $menu-background-color: #e8eced;
 %menu-background {
     background-image: linear-gradient(to right, #e8eced, #e8eced);
 }
-
-@import "common";
 
 
 .spacer30 {

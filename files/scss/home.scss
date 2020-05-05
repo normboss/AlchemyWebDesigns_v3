@@ -8,6 +8,10 @@ and open the template in the editor.
     Author     : Norm
 */
 
+@import 'common';
+// $menu-background-color: #DBE3F6;
+@import 'headerIndex';
+
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
 $menu-background-color: #F6F8F9;
 $menu-background-color1: red; // #F6F8F9;
@@ -15,9 +19,6 @@ $menu-background-color2: blue; // #F6F8F9;
 %menu-background {
     background-image: linear-gradient(to right, $menu-background-color1, $menu-background-color1);
 }
-@import 'common';
-// $menu-background-color: #DBE3F6;
-@import 'headerIndex';
 
 .spacer30 {
     height: 30px;
