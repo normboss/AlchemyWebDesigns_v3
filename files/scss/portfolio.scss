@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans:400,400i,600,700,800");
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Italianno&display=swap');
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Italianno&display=swap");
 
 @import "common";
 
@@ -17,7 +17,6 @@ $menu-background-color: #e8eced;
 %menu-background {
     background-image: linear-gradient(to right, #e8eced, #e8eced);
 }
-
 
 .spacer30 {
     height: 30px;
@@ -72,7 +71,7 @@ main {
     font-size: 28px;
     /*word-spacing: -5px;*/
     /*letter-spacing: 20px;*/
-    // position: relative;
+    position: relative;
     left: -8px;
     // top: -8px;
     width: 100%;
@@ -104,7 +103,7 @@ main {
       font-family: 'Zeyada', cursive;*/
 
     .portfolio {
-        position: relative;
+        // position: relative;
         // left: -8px;
         // top: -8px;
 
@@ -117,14 +116,18 @@ main {
         background-position-x: center;
         background-position-x: left;
         background-position-y: bottom;
+
         .the-strip {
+            // border: 3px solid red;
             // width: 100%;
+            // position: absolute;
             display: flex;
-            padding-top: 200px;
+            padding-top: 100px;
             padding-left: 20%;
             justify-content: flex-start;
             font-family: Arial, Helvetica, sans-serif;
             overflow: auto;
+
             @include max-mixin(820px) {
                 padding-left: 10%;
             }
@@ -167,9 +170,10 @@ main {
 
             // }
 
-            
             .box1 {
-                border-block: 2px solid rgba(112, 112, 112, 1);
+                animation: moveInFromBottom 3s ease-out .5s;
+                animation-fill-mode: backwards;
+                    border-block: 2px solid rgba(112, 112, 112, 1);
                 background-color: rgba(75, 86, 99, 0.59);
                 // display: flex;
                 flex-direction: column;
@@ -241,6 +245,8 @@ main {
             }
 
             .box2 {
+                animation: moveInFromRight 3s ease-out .5s;
+                animation-fill-mode: backwards;
                 // border: 3px solid red;
                 // padding-left: 50px;
                 display: flex;
@@ -307,17 +313,17 @@ main {
                     }
                     @include max-mixin(700px) {
                         width: 100%;
-                    //     width: 300px;
-                    //     padding-left: 10px;
-                    //     margin-left: 30px;
-                    //     padding-right: 10px;
+                        //     width: 300px;
+                        //     padding-left: 10px;
+                        //     margin-left: 30px;
+                        //     padding-right: 10px;
                     }
                     @include max-mixin(350px) {
-                    //     // width: 250px;
-                    //     padding-left: 10px;
-                    //     margin: 0 auto;
-                    //     align-self: center;
-                    //     margin-right: 20px;
+                        //     // width: 250px;
+                        //     padding-left: 10px;
+                        //     margin: 0 auto;
+                        //     align-self: center;
+                        //     margin-right: 20px;
                         // width: 100%;
                     }
                 }
@@ -356,10 +362,10 @@ main {
                     //     padding-left: 10px;
                     //     margin-left: 30px;
                     // }
-                    
+
                     @include max-mixin(350px) {
-                    //     // width: 250px;
-                    //     // padding-left: 10px;
+                        //     // width: 250px;
+                        //     // padding-left: 10px;
                         // width: 95%;
                         // padding-left: 25px;
                         // padding-right: 15px;
@@ -371,10 +377,10 @@ main {
                         font-weight: bold;
                     }
                     .wrought-iron {
-                        font-family: 'IM Fell English SC', serif;
+                        font-family: "IM Fell English SC", serif;
                     }
                     .village-weaver {
-                        font-family: 'Italianno', cursive;
+                        font-family: "Italianno", cursive;
                     }
                 }
                 .box23 {

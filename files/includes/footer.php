@@ -7,9 +7,11 @@
                 Serving&nbsp;Mid&#8209;Coast&nbsp;Maine
             </div>
             <div class="foot__text">
-                <a href="mailto:info@alchemywebdesigns.com">info@alchemywebdesigns.com</a>
+                <a href="mailto:info@alchemywebdesigns.com">info@alchemywebdesigns.com</a><br>
             </div>
-
+            <!-- <div class="foot__text">
+                Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            </div> -->
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>

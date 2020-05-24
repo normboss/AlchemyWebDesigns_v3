@@ -15,16 +15,18 @@ and open the template in the editor.
 <html>
 
 <head>
-    <title>Alchemy Web Design</title>
+    <?php
+    require '../includes/globalSiteTag.html';
+    ?>
+
+    <title>Alchemy Web Designs | Contact Us</title>
+    <meta name=="description" content="Reach out to us with a message. We'd love to hear from you!">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/contact.css" media="screen" rel="stylesheet" type="text/css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <!--<link href=".files/fonts/Wizards Magic.ttf" rel="stylesheet">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
-    <!--<link rel="icon" href="./images/Image7.gif">-->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
 </head>
@@ -47,7 +49,7 @@ and open the template in the editor.
             <div class="spacer20"></div>
             <div class="form-container">
                 <div>
-                    We enjoy meeting and working with people who love what they do. 
+                    We enjoy meeting and working with people who love what they do.
                     <br>
                     <div class="spacer10"></div>
                     Connect with us and together We will create an on line presence that effectively represents your vision.

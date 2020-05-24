@@ -17,17 +17,15 @@ and open the template in the editor.
 <head>
     <?php
     require '../includes/globalSiteTag.html';
-    require '../includes/keywords.php';
     ?>
+    <title>Alchemy Web Designs | Our clients</title>
+    <meta name=="description" content="Our customers speak! View the custom websites we designed and be amazed (as we were) by their many talents.">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/portfolio.css" media="screen" rel="stylesheet" type="text/css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <!--<link href=".files/fonts/Wizards Magic.ttf" rel="stylesheet">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
-    <!--<link rel="icon" href="./images/Image7.gif">-->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
 </head>
@@ -42,7 +40,7 @@ and open the template in the editor.
     <main>
 
         <div class="portfolio">
-            <div class="the-strip">
+            <div id="the-strip" class="the-strip">
                 <div class="box box1">
                     <div class="box11">Our Work</div>
                     <div class="box12 box13" onclick="wroughtIronLink() ">
@@ -139,7 +137,14 @@ and open the template in the editor.
         }
     </script>
 
-
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script>
+        // gsap.from("#bg", 1, { opacity: 0, delay: 0.5 });
+        // gsap.from("#logo", 1, { left: -200, rotation: -90, scale: 0, ease: Back.easeOut, delay: 1.5 });
+        gsap.from("the-strip", 3, { top: "2000", ease: Back.easeOut });
+        // gsap.from("#content", 0.5, { opacity: 0, top: 100, delay: 3 });
+    </script>
 </body>
 
 </html>

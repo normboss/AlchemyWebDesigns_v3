@@ -8,15 +8,17 @@ $_SESSION['pagenumber'] = "0";
 <head>
     <?php
     require 'files/includes/globalSiteTag.html';
-    require 'files/includes/keywords.php';
     ?>
+    <title>Alchemy Web Designs | Custom website design</title>
+    <meta name=="description" content="Put the magic of the web to work! Providing attractive, responsive websites to increase your customer base & bolster business. Personalized customer contact a specialty!">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <style>
         a {
-            color: #FFF;
+            color: #ddd;
         }
     </style>
 </head>

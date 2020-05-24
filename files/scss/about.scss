@@ -299,7 +299,8 @@ main {
             width: 200px;
             padding-top: 10px;
 
-            img {
+            .norm-image {
+                margin-top: 20px;
                 // width: 200px;
                 // clip-path: circle(90px);
                 transform: rotate(-15deg);

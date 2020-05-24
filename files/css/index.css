@@ -281,6 +281,28 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@keyframes moveInFromBottom {
+  0% {
+    opacity: 1;
+    transform: translateY(1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    transform: StranslateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .logo {
   opacity: 1;
   font-weight: bold;
@@ -761,7 +783,6 @@ and open the template in the editor.
 }
 
 .header-index .nav-index .nav-index__narrow {
-  border: 3px solid red;
   background-color: rgba(246, 248, 249, 0);
   height: 50px;
   width: 70px;

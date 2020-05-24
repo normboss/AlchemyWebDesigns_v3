@@ -277,6 +277,28 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
+@keyframes moveInFromBottom {
+  0% {
+    opacity: 1;
+    transform: translateY(1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    transform: StranslateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .logo {
   opacity: 1;
   font-weight: bold;
@@ -757,7 +779,6 @@ and open the template in the editor.
 }
 
 .header-index .nav-index .nav-index__narrow {
-  border: 3px solid red;
   background-color: rgba(246, 248, 249, 0);
   height: 50px;
   width: 70px;
@@ -946,6 +967,16 @@ and open the template in the editor.
   src: url("../fonts/Wizards Magic.ttf");
 }
 
+#ufo-block {
+  width: 1%;
+  position: fixed;
+}
+
+#ufo-block img {
+  width: 100%;
+  position: fixed;
+}
+
 main {
   max-width: 1400px;
   width: 100%;
@@ -1083,5 +1114,9 @@ main .images .forrest .box3 {
 
 main .images .forrest .box3 .smaller {
   font-size: 24px;
+}
+
+img {
+  width: 50px;
 }
 /*# sourceMappingURL=home.css.map */

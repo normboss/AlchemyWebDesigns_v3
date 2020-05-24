@@ -16,6 +16,7 @@ $menuBrkPt2: 700px;
 $text-color: #0a0a09;
 $text-color: red;
 
+
 .header-index {
     * {
         box-sizing: border-box;
@@ -55,7 +56,7 @@ $text-color: red;
             }
         }
         .nav-index__narrow {
-            border: 3px solid red;
+            // border: 3px solid red;
             background-color: rgba(246, 248, 249, 0); //$menu-background-color;
             height: 50px;
             width: 70px;
