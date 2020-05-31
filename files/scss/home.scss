@@ -75,6 +75,7 @@ $font-size: 16px;
     }
 }
 
+
 main {
     // border: 3px solid red;
     max-width: $max-page-width;
@@ -137,6 +138,7 @@ main {
             grid-template-rows: 1fr 1fr 1fr 1fr;
             // justify-items: center;
             // grid-row-gap: 5%;
+            height: 100vh;
 
             
             .box {

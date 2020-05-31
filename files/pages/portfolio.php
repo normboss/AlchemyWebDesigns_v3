@@ -34,6 +34,7 @@ and open the template in the editor.
 
     <?php
     require '../includes/header1.php';
+    
     $altStyle = 'style="text-align: center; display: block; font-size: 24px; 
                 font-style: italic; font-family: Arial; font-weight: normal; text-decoration: none; color: black;"';
     ?>
@@ -84,7 +85,9 @@ and open the template in the editor.
 
                 <div class="box box2">
                     <div class="box20">
-                        <!-- <?php require '../includes/logo.php';     ?> -->
+                        <!-- <?php 
+                        // require '../includes/logo.php';     
+                        ?> -->
                     </div>
                     <div class="box21">
                         Testimonial
@@ -109,8 +112,8 @@ and open the template in the editor.
                         require '../includes/magic.php';
                         ?>
                     </div>
-                    <div class="spacer20"></div>
-                    <div class="spacer20"></div>
+                    <!-- <div class="spacer20"></div>
+                    <div class="spacer20"></div> -->
                 </div>
             </div>
         </div>
@@ -122,7 +125,6 @@ and open the template in the editor.
         function wroughtIronLink() {
             window.open('https://www.scottishwroughtiron.com', '_blank');
         }
-        
         function maineVillageWeaver() {
             window.open('https://www.mainevillageweaver.com', '_blank');
         }
@@ -137,12 +139,12 @@ and open the template in the editor.
         }
     </script>
 
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> -->
     <script>
         // gsap.from("#bg", 1, { opacity: 0, delay: 0.5 });
         // gsap.from("#logo", 1, { left: -200, rotation: -90, scale: 0, ease: Back.easeOut, delay: 1.5 });
-        gsap.from("the-strip", 3, { top: "2000", ease: Back.easeOut });
+        // gsap.from("the-strip", 3, { top: "2000", ease: Back.easeOut });
         // gsap.from("#content", 0.5, { opacity: 0, top: 100, delay: 3 });
     </script>
 </body>

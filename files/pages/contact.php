@@ -1,11 +1,15 @@
 <?php
 if (!session_id())
     session_start();
-// require '..\includes\root.php';
-require __DIR__ . '/../includes/root.php';
-$_SESSION['pagename'] = "contact";
+function generateFormToken($form)
+{
+    // generate a token from an unique value
+    $token = md5(uniqid(microtime(), true));
+    // Write the generated token to the session variable to check it against the hidden field when the form is sent
+    $_SESSION[$form . '_token'] = $token;
+    return $token;
+}
 ?>
-
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -29,6 +33,15 @@ and open the template in the editor.
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script>
+        function onSubmit(token) {
+            // $("#contact-form").attr("action", "misc.php");
+            document.getElementById("contact-form").submit();
+        }
+    </script>
 </head>
 
 <body>
@@ -54,18 +67,21 @@ and open the template in the editor.
                     <div class="spacer10"></div>
                     Connect with us and together We will create an on line presence that effectively represents your vision.
                 </div>
-                <form method="post" class="contactform" action="https://www1.domain.com/scripts/formemail.bml" name="contactform">
-                    <input type="hidden" name="my_email" value="norm.bosse0@gmail.com">
-                    <label for="email">Your Email Address</label>
-                    <input maxlength="80" name="email" size="40" type="text">
-                    <label for="subject">Subject</label>
-                    <input maxlength="80" name="subject" size="40" type="text">
-                    <label for="message">Message</label>
-                    <textarea cols="40" maxlength="1000" name="message" rows="5"></textarea>
-                    <input type="hidden" name="required" value="email,message">
-                    <input type="hidden" name="thankyou_url" value="https://www.alchemywebdesigns.com/files/pages/thankyou.php">
-                    <label for="submit"></label>
-                    <input type="submit" name="submit" value="Send">
+                <?php
+                // generate a new token for the $_SESSION superglobal and put them in a hidden field
+                $newToken = generateFormToken('form1');
+                ?>
+                <!-- <form action="misc.php" class="contactform" method="post" name="contactform"> -->
+                <form id="contact-form" action="misc.php" class="contactform" method="post" name="contactform">
+                    <label for="name">Your Name *</label>
+                    <input maxlength="50" name="name" size="30" type="text">
+                    <input type="hidden" name="token" value="<?php echo $newToken; ?>">
+                    <label for="email">Email Address *</label>
+                    <input maxlength="80" name="email" size="30" type="text">
+                    <label for="message">Comments *</label>
+                    <textarea cols="30" maxlength="1000" name="message" rows="5"></textarea> * = required<br>
+                    <!-- <input class="submit" type="submit" value="Submit »"> -->
+                    <button class="g-recaptcha submit" data-sitekey="6Ld82v0UAAAAAIUG_P-YM0zTf9eoRCGEC3WTcf8N" data-callback='onSubmit'>Submit</button><br>
                 </form>
 
             </div>

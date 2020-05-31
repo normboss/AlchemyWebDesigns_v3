@@ -16,18 +16,13 @@ and open the template in the editor.
 
 <head>
 <?php
-    require '../includes/globalSiteTag.html';
-    require 'files/includes/keywords.php';
     ?>
+    <title>Contact Page Thank You</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/thankyou.css" media="screen" rel="stylesheet" type="text/css">
-    <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script> -->
-    <!--<link href=".files/fonts/Wizards Magic.ttf" rel="stylesheet">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Zeyada" rel="stylesheet">
-    <!--<link rel="icon" href="./images/Image7.gif">-->
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
     <script>

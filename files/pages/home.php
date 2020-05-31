@@ -62,7 +62,7 @@ and open the template in the editor.
         <!-- <div id="click-me">Click Me</div> -->
     </main>
 
-    <?php require '../includes/footer.php' ?>
+    <!-- <?php require '../includes/footer.php' ?> -->
 
     <div id="ufo-block">
         <!-- <img id="ufo" class="ufo" src="../images/night.svg" style="width:'20px';"> -->
